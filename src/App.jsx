@@ -1,3 +1,6 @@
+import { Suspense, lazy, useState } from "react";
+import { Route, Routes } from "react-router-dom";
+
 import gsap from "gsap";
 import { ScrollTrigger, SplitText } from "gsap/all";
 
