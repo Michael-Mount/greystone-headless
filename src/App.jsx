@@ -7,8 +7,8 @@ import { ScrollTrigger, SplitText } from "gsap/all";
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
 //Navbar Components
-import MainNav from "./components/Navbar/MainNav";
-import MobileNav from "./components/Navbar/MobileNav";
+import MainNav from "./components/Navbar/MainNav/MainNav";
+import MobileNav from "./components/Navbar/MobileNav/MobileNav";
 
 //Footer Component
 import Footer from "./components/Footer/Footer";
