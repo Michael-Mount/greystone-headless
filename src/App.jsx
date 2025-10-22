@@ -1,4 +1,4 @@
-import { Suspense, lazy, useState } from "react";
+import { Suspense, lazy } from "react";
 import { Route, Routes } from "react-router-dom";
 
 import gsap from "gsap";
@@ -6,10 +6,80 @@ import { ScrollTrigger, SplitText } from "gsap/all";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
+//Navbar Components
+import MainNav from "./components/Navbar/MainNav";
+import MobileNav from "./components/Navbar/MobileNav";
+
+//Footer Component
+import Footer from "./components/Footer/Footer";
+
+//Lazy Load Pages
+const Accessibility = lazy(() => import("./pages/Accessibility/Accessibility"));
+const Activities = lazy(() => import("./pages/Activities/Activites"));
+const Blog = lazy(() => import("./pages/Blog/Blog"));
+const Careers = lazy(() => import("./pages/Careers/Careers"));
+const Contact = lazy(() => import("./pages/Contact/Contact"));
+const Cottage = lazy(() => import("./pages/Cottage/Cottage"));
+const Dine = lazy(() => import("./pages/Dine/Dine"));
+const Enhancements = lazy(() => import("./pages/Enhancements/Enhancements"));
+const Events = lazy(() => import("./pages/Events/Evnets"));
+const Experience = lazy(() => import("./pages/Experience/Experience"));
+const Gallery = lazy(() => import("./pages/Gallery/Gallery"));
+const Gifts = lazy(() => import("./pages/Gifts/Gifts"));
+const Hillmont = lazy(() => import("./pages/Hillmont/Hillmont"));
+const Home = lazy(() => import("./pages/Home/Home"));
+const Mansion = lazy(() => import("./pages/Mansion/Mansion"));
+const Packages = lazy(() => import("./pages/Packages/Packages"));
+const Policies = lazy(() => import("./pages/Policies/Policies"));
+const Press = lazy(() => import("./pages/Press/Press"));
+const Rentals = lazy(() => import("./pages/Rentals/Rentals"));
+const Rooms = lazy(() => import("./pages/Rooms/Rooms"));
+const Spa = lazy(() => import("./pages/Spa/Spa"));
+const Stay = lazy(() => import("./paages/Stay/Stay"));
+const Story = lazy(() => import("./pages/Story/Story"));
+const Weddings = lazy(() => import("./pages/Weddings/Weddings"));
+
 function App() {
   return (
     <>
-      <div> app js</div>
+      <MainNav className="hidden md:block" />
+      <MobileNav className="flex md:hidden" />
+      <Suspense fallback={<div className="page-fallback"></div>}>
+        <Routes>
+          {/* Home */}
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Navigate to="/" replace />} />
+
+          {/* Top-level pages */}
+          <Route path="/accessibility" element={<Accessibility />} />
+          <Route path="/activities" element={<Activities />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/careers" element={<Careers />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/cottage" element={<Cottage />} />
+          <Route path="/dine" element={<Dine />} />
+          <Route path="/enhancements" element={<Enhancements />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/experience" element={<Experience />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/gifts" element={<Gifts />} />
+          <Route path="/hillmont" element={<Hillmont />} />
+          <Route path="/mansion" element={<Mansion />} />
+          <Route path="/packages" element={<Packages />} />
+          <Route path="/policies" element={<Policies />} />
+          <Route path="/press" element={<Press />} />
+          <Route path="/rentals" element={<Rentals />} />
+          <Route path="/rooms" element={<Rooms />} />
+          <Route path="/spa" element={<Spa />} />
+          <Route path="/stay" element={<Stay />} />
+          <Route path="/story" element={<Story />} />
+          <Route path="/weddings" element={<Weddings />} />
+
+          {/* 404 */}
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Suspense>
+      <Footer />
     </>
   );
 }
