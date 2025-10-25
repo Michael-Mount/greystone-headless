@@ -1,9 +1,9 @@
-import React from "react";
+import HeroVIdeo from "../../components/Decorative/HeroVideo/HeroVIdeo";
 
 export default function Home() {
   return (
     <div>
-      <h1>Home</h1>
+      <HeroVIdeo />
     </div>
   );
 }

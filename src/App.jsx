@@ -1,5 +1,5 @@
 import { Suspense, lazy } from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 
 import gsap from "gsap";
 import { ScrollTrigger, SplitText } from "gsap/all";
@@ -35,15 +35,15 @@ const Press = lazy(() => import("./pages/Press/Press"));
 const Rentals = lazy(() => import("./pages/Rentals/Rentals"));
 const Rooms = lazy(() => import("./pages/Rooms/Rooms"));
 const Spa = lazy(() => import("./pages/Spa/Spa"));
-const Stay = lazy(() => import("./paages/Stay/Stay"));
+const Stay = lazy(() => import("./pages/Stay/Stay"));
 const Story = lazy(() => import("./pages/Story/Story"));
 const Weddings = lazy(() => import("./pages/Weddings/Weddings"));
 
 function App() {
   return (
     <>
-      <MainNav className="hidden md:block" />
-      <MobileNav className="flex md:hidden" />
+      <MainNav />
+
       <Suspense fallback={<div className="page-fallback"></div>}>
         <Routes>
           {/* Home */}
@@ -74,9 +74,6 @@ function App() {
           <Route path="/stay" element={<Stay />} />
           <Route path="/story" element={<Story />} />
           <Route path="/weddings" element={<Weddings />} />
-
-          {/* 404 */}
-          <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>
       <Footer />

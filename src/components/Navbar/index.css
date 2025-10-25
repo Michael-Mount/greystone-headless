@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@layer components {
+  .nav {
+    @apply bg-transparent w-full fixed top-0 z-50 text-[15px] p-[15px] uppercase;
+  }
+  .navContainer {
+    @apply flex justify-around items-center max-w-[1400px] gap-[60px] m-auto py-0 px-[40px] text-white stroke-white fill-white;
+  }
+  .logoContainer {
+    @apply flex items-center;
+  }
+
+  .logo {
+    @apply w-[200px] text-white stroke-white fill-white;
+  }
+
+  .mainMenu {
+    @apply flex decoration-0 list-none;
+  }
+
+  .listItem {
+    @apply flex items-center py-[10] px-[20px];
+  }
+}
