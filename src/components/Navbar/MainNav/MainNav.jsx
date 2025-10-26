@@ -1,4 +1,8 @@
 import "../index.css";
+import { useRef } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/all";
 import { Link } from "react-router-dom";
 
 import DropdownNav from "../DropdownNav/DropdownNav";
@@ -33,9 +37,24 @@ const hamLinks = [
 ];
 
 export default function MainNav() {
+  const navContainer = useRef(null);
+  const logoContainer = useRef(null);
+
+  useGSAP(() => {
+    gsap.to(navContainer.current, {
+      backgroundColor: "#003d51",
+      scrollTrigger: {
+        trigger: navContainer.current,
+        start: "top top",
+        end: "bottom top",
+        scrub: true,
+      },
+    });
+  });
+
   return (
     <>
-      <nav className="nav">
+      <nav className="nav" ref={navContainer}>
         <div className="navContainer">
           <div className="logoContainer">
             <Link to="/">
