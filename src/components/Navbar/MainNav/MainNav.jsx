@@ -7,6 +7,8 @@ import { Link } from "react-router-dom";
 
 import DropdownNav from "../DropdownNav/DropdownNav";
 import HambrgerMenu from "../HamburgerMenu/HamburgerMenu";
+import BasicBtn from "../../Buttons/BasicBtn/BasicBtn";
+import NavGhostBtn from "../../Buttons/NavGhostBtn/NavGhostBtn";
 
 import Logo from "../../../images/picsvg_download.svg";
 
@@ -38,11 +40,21 @@ const hamLinks = [
 
 export default function MainNav() {
   const navContainer = useRef(null);
-  const logoContainer = useRef(null);
+  const bookBtn = useRef(null);
 
   useGSAP(() => {
     gsap.to(navContainer.current, {
       backgroundColor: "#003d51",
+      scrollTrigger: {
+        trigger: navContainer.current,
+        start: "top top",
+        end: "bottom top",
+        scrub: true,
+      },
+    });
+
+    gsap.to(bookBtn.current, {
+      backgroundColor: "white !imporant",
       scrollTrigger: {
         trigger: navContainer.current,
         start: "top top",
@@ -79,6 +91,9 @@ export default function MainNav() {
             </li>
             <li className="listItem">
               <HambrgerMenu items={hamLinks} />
+            </li>
+            <li className="listItem">
+              <NavGhostBtn title="Reserve Now" link="#" ref={bookBtn} />
             </li>
           </ul>
         </div>
