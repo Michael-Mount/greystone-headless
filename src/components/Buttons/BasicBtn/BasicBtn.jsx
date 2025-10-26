@@ -1,8 +1,8 @@
 import "./index.css";
 
-export default function BasicBtn({ title, link }) {
+export default function BasicBtn({ bg, title, link }) {
   return (
-    <div className="basic-btn">
+    <div className={bg}>
       <a href={link}>{title}</a>
     </div>
   );

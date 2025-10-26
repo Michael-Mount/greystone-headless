@@ -1,4 +1,4 @@
-.basic-btn {
+.blue-btn {
   background-color: #003e52;
   color: white;
   border: none;
@@ -10,7 +10,25 @@
   width: fit-content;
 }
 
-.basic-btn:hover {
+.blue-btn:hover {
   background-color: white;
   color: #003e52;
+}
+
+.white-btn {
+  background-color: white;
+  color: #003e52;
+  border: none;
+  padding: 15px 60px;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 100;
+  width: fit-content;
+}
+
+.white-btn:hover {
+  background-color: #003e52;
+  border: white solid 1px;
+  color: white;
 }
