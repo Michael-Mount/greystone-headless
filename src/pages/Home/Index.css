@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@layer components {
+  .drawHeader {
+    @apply w-screen max-w-none flex h-[80vh] overflow-hidden p-4;
+  }
+
+  .svgContainer {
+    @apply flex flex-col flex-1 items-center justify-center gap-20 px-6 h-[75%];
+  }
+
+  .svgContainer p {
+    @apply text-5xl uppercase font-serif self-start;
+  }
+
+  .headerImgContainer {
+    @apply flex flex-1 items-center justify-end gap-4 px-6 h-full;
+  }
+
+  .headerImgContainer img {
+    @apply h-full w-[50%] object-cover;
+  }
+}

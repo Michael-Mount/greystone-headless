@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 
 import DropdownNav from "../DropdownNav/DropdownNav";
 import HambrgerMenu from "../HamburgerMenu/HamburgerMenu";
-import BasicBtn from "../../Buttons/BasicBtn/BasicBtn";
 import NavGhostBtn from "../../Buttons/NavGhostBtn/NavGhostBtn";
 
 import Logo from "../../../images/picsvg_download.svg";

@@ -17,8 +17,8 @@ export default function LuxuryDraw({
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      const pen = svgRef.current.querySelectorAll("#pen path"); // white mask strokes
-      const strokes = svgRef.current.querySelectorAll("#stroke path"); // visible outline
+      const pen = svgRef.current.querySelectorAll("#pen path");
+      const strokes = svgRef.current.querySelectorAll("#stroke path");
 
       gsap.set([pen, strokes], { visibility: "hidden", drawSVG: "0% 0%" });
 
@@ -45,14 +45,13 @@ export default function LuxuryDraw({
       id="luxury-svg"
       ref={svgRef}
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 7.3 136.5 44.2"
+      viewBox="0 7.3 152.5 44.2"
       width={size}
-      height={size ? undefined : 44.2}
+      height="172px"
       style={{ color }}
     >
       <defs>
         <mask id="luxury-mask" maskUnits="userSpaceOnUse">
-          {/* fully hidden base */}
           <rect x="0" y="0" width="100%" height="100%" fill="black" />
           {/* animated “pen” that reveals the fill */}
           <g
