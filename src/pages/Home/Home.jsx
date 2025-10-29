@@ -6,9 +6,22 @@ import "./Index.css";
 
 import HeroVIdeo from "../../components/Decorative/HeroVideo/HeroVIdeo";
 import LuxuryDraw from "../../components/Decorative/LuxuryDraw/LuxuryDraw";
+import SplitFeature1 from "../../components/Decorative/SplitFeature1/SplitFeature1";
+import SplitGallery from "../../components/Decorative/SplitGallery/SplitGallery";
 
 import Lobby1 from "../../images/lobby1.png";
 import Lake1 from "../../images/lake1.png";
+import Lake2 from "../../images/lake2.png";
+import Coffee1 from "../../images/coffee1.png";
+import Wedding1 from "../../images/wedding1.png";
+
+import AutumnLake from "../../Video/LakeAutumn.mp4";
+
+const mainGallery = {
+  image1: Coffee1,
+  image2: Wedding1,
+  video: AutumnLake,
+};
 
 export default function Home() {
   const drawContainer = useRef(null);
@@ -59,6 +72,13 @@ export default function Home() {
           <img src={Lake1} alt="a man on a boat" />
         </div>
       </div>
+      <SplitFeature1
+        title="Welcome"
+        content="There are endless things to do, although it’s perfectly alright to do nothing at all..."
+        img={Lake2}
+        alt="a wooden boat on a lake"
+      />
+      <SplitGallery gallery={mainGallery} />
     </div>
   );
 }
