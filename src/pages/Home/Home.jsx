@@ -9,6 +9,7 @@ import LuxuryDraw from "../../components/Decorative/LuxuryDraw/LuxuryDraw";
 import SplitFeature1 from "../../components/Decorative/SplitFeature1/SplitFeature1";
 import SplitGallery from "../../components/Decorative/SplitGallery/SplitGallery";
 import TestimonialCarousel from "../../components/Decorative/TestimonialCarousel/TestimonialCarousel";
+import SplitFeature2 from "../../components/Decorative/SplitFeature2/SplitFeature2";
 
 import Lobby1 from "../../images/lobby1.png";
 import Lake1 from "../../images/lake1.png";
@@ -22,6 +23,20 @@ const mainGallery = {
   image1: Coffee1,
   image2: Wedding1,
   video: AutumnLake,
+};
+
+const roomSplit = {
+  img: "https://greystoneinn.com/wp-content/uploads/2020/09/MansionPremiumRm-4.jpg",
+  title: "Rooms",
+  para: "With a variety of social, special event, and holiday-themed packages, we have something for everyone.",
+  links: [{ label: "EXPLORE FURTHER", href: "#" }],
+};
+
+const spaSplit = {
+  img: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  title: "Spa ",
+  para: "Rounding out the guest experience is a luxurious spa with six treatment rooms. Its comprehensive menu of treatments creates a unique and replenishing spa getaway unlike anything in the area. ",
+  links: [{ label: "EXPLORE FURTHER", href: "#" }],
 };
 
 export default function Home() {
@@ -81,6 +96,9 @@ export default function Home() {
       />
       <SplitGallery gallery={mainGallery} />
       <TestimonialCarousel />
+      <SplitFeature2 content={roomSplit} />
+      <SplitFeature2 />
+      <SplitFeature2 content={spaSplit} />
     </div>
   );
 }
