@@ -8,6 +8,7 @@ import HeroVIdeo from "../../components/Decorative/HeroVideo/HeroVIdeo";
 import LuxuryDraw from "../../components/Decorative/LuxuryDraw/LuxuryDraw";
 import SplitFeature1 from "../../components/Decorative/SplitFeature1/SplitFeature1";
 import SplitGallery from "../../components/Decorative/SplitGallery/SplitGallery";
+import TestimonialCarousel from "../../components/Decorative/TestimonialCarousel/TestimonialCarousel";
 
 import Lobby1 from "../../images/lobby1.png";
 import Lake1 from "../../images/lake1.png";
@@ -79,6 +80,7 @@ export default function Home() {
         alt="a wooden boat on a lake"
       />
       <SplitGallery gallery={mainGallery} />
+      <TestimonialCarousel />
     </div>
   );
 }
