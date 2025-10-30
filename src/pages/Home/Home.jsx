@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/scrollTrigger";
+
 import { useGSAP } from "@gsap/react";
 import "./Index.css";
 
