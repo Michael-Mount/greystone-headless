@@ -29,7 +29,7 @@ const roomSplit = {
   img: "https://greystoneinn.com/wp-content/uploads/2020/09/MansionPremiumRm-4.jpg",
   title: "Rooms",
   para: "With a variety of social, special event, and holiday-themed packages, we have something for everyone.",
-  links: [{ label: "EXPLORE FURTHER", href: "#" }],
+  links: [{ label: "EXPLORE FURTHER", href: "/rooms" }],
 };
 
 const spaSplit = {

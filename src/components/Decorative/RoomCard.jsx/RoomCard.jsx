@@ -86,7 +86,6 @@ export default function RoomCard({ room }) {
               key={idx}
               type="button"
               className="h-12 w-14 overflow-hidden  border border-slate-100 hover:opacity-80"
-              // you could open lightbox here
             >
               <img
                 src={img}

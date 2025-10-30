@@ -1,4 +1,4 @@
-import { Suspense, lazy } from "react";
+import { Suspense, lazy, useState, useEffect } from "react";
 import { Route, Routes, Navigate } from "react-router-dom";
 
 import gsap from "gsap";
@@ -9,6 +9,7 @@ gsap.registerPlugin(ScrollTrigger, SplitText);
 //Navbar Components
 import MainNav from "./components/Navbar/MainNav/MainNav";
 import MobileNav from "./components/Navbar/MobileNav/MobileNav";
+import FullscreenLoader from "./components/Loaders/FullscreenLoader";
 
 //Footer Component
 import Footer from "./components/Footer/Footer";
@@ -40,8 +41,15 @@ const Story = lazy(() => import("./pages/Story/Story"));
 const Weddings = lazy(() => import("./pages/Weddings/Weddings"));
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const t = setTimeout(() => setLoading(false), 2500);
+    return () => clearTimeout(t);
+  }, []);
   return (
     <>
+      <FullscreenLoader loading={loading} onDone={() => console.log("done")} />
       <MainNav />
 
       <Suspense fallback={<div className="page-fallback"></div>}>

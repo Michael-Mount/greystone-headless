@@ -92,7 +92,11 @@ export default function MainNav() {
               <HambrgerMenu items={hamLinks} />
             </li>
             <li className="listItem">
-              <NavGhostBtn title="Reserve Now" link="#" ref={bookBtn} />
+              <NavGhostBtn
+                title="Reserve Now"
+                link="https://s006006.officialbookings.com/?activeBookingEngine=KBE&propertyCode=S006006&skd-checkin=2025-11-02&skd-checkout=2025-11-03&skd-property-code=S006006"
+                ref={bookBtn}
+              />
             </li>
           </ul>
         </div>
