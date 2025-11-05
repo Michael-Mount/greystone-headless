@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import gsap from "gsap";
-
 import { useGSAP } from "@gsap/react";
+
 import "./Index.css";
 
 import HeroVIdeo from "../../components/Decorative/HeroVideo/HeroVIdeo";

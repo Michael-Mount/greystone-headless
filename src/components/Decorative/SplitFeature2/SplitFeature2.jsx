@@ -2,6 +2,7 @@ import { useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -86,8 +87,8 @@ export default function SplitFeature2({
               <ul className="mt-6 space-y-3">
                 {(content.links || []).map((l, idx) => (
                   <li key={idx} className="sf-reveal">
-                    <a
-                      href={l.href || "#"}
+                    <Link
+                      to={l.href || "#"}
                       className="inline-flex items-center gap-2 text-[15px] text-neutral-900 hover:underline underline-offset-4"
                       onClick={(e) => {
                         if (!l.href || l.href === "#") e.preventDefault();
@@ -97,7 +98,7 @@ export default function SplitFeature2({
                         +
                       </span>
                       <span className="leading-tight">{l.label}</span>
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>

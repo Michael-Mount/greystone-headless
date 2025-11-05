@@ -1,15 +1,7 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 export default function RoomCard({ room }) {
-  const {
-    name,
-    description,
-    images = [],
-    slug = "#",
-    price,
-    amenities = [],
-  } = room;
+  const { name, description, images = [], slug = "#", amenities = [] } = room;
 
   const mainImage = images[0];
 
@@ -40,11 +32,6 @@ export default function RoomCard({ room }) {
       <div className="p-5 flex-1 flex flex-col gap-3">
         <div className="flex items-start justify-between gap-3">
           <h3 className="text-lg font-semibold text-slate-900">{name}</h3>
-          {price && (
-            <span className="text-sm text-slate-500 whitespace-nowrap">
-              {price}
-            </span>
-          )}
         </div>
 
         {description && (

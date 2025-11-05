@@ -30,10 +30,12 @@ const Gifts = lazy(() => import("./pages/Gifts/Gifts"));
 const Hillmont = lazy(() => import("./pages/Hillmont/Hillmont"));
 const Home = lazy(() => import("./pages/Home/Home"));
 const Mansion = lazy(() => import("./pages/Mansion/Mansion"));
+const MansionBar = lazy(() => import("./pages/MansionBar/MansionBar"));
 const Packages = lazy(() => import("./pages/Packages/Packages"));
 const Policies = lazy(() => import("./pages/Policies/Policies"));
 const Press = lazy(() => import("./pages/Press/Press"));
 const Rentals = lazy(() => import("./pages/Rentals/Rentals"));
+const Resturaunt = lazy(() => import("./pages/Restaurant/Restauraunt"));
 const Rooms = lazy(() => import("./pages/Rooms/Rooms"));
 const Spa = lazy(() => import("./pages/Spa/Spa"));
 const Stay = lazy(() => import("./pages/Stay/Stay"));
@@ -73,10 +75,12 @@ function App() {
           <Route path="/gifts" element={<Gifts />} />
           <Route path="/hillmont" element={<Hillmont />} />
           <Route path="/mansion" element={<Mansion />} />
+          <Route path="/dine/mansion-bar" element={<MansionBar />} />
           <Route path="/packages" element={<Packages />} />
           <Route path="/policies" element={<Policies />} />
           <Route path="/press" element={<Press />} />
           <Route path="/rentals" element={<Rentals />} />
+          <Route path="/dine/the-restaurant" element={<Resturaunt />} />
           <Route path="/rooms" element={<Rooms />} />
           <Route path="/spa" element={<Spa />} />
           <Route path="/stay" element={<Stay />} />
