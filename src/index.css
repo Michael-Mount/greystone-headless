@@ -1,1 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap");
+
 @import "tailwindcss";
+
+@theme {
+  --font-cursive: "Imperial Script", cursive;
+
+  --color-main: #003d51;
+}

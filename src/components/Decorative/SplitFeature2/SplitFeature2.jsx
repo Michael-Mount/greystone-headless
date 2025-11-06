@@ -75,7 +75,7 @@ export default function SplitFeature2({
         >
           <div className="h-full flex items-center">
             <div className="sf-reveal px-6 sm:px-10 lg:px-14 py-10 lg:py-0 max-w-[36rem]">
-              <h2 className="sf-reveal uppercase tracking-wide text-[26px] sm:text-[28px] font-semibold text-[rgb(0, 61, 81)]">
+              <h2 className="sf-reveal  tracking-wide text-[44px] sm:text-[44px] font-cursive text-[rgb(0, 61, 81)]">
                 {content.title}
               </h2>
 
