@@ -9,11 +9,11 @@ gsap.registerPlugin(ScrollTrigger, useGSAP);
 export default function SplitFeature2({
   content = {
     img: "https://greystoneinn.com/wp-content/uploads/2020/09/Greystone_Fall23_Rental-5913.jpg",
-    title: "DINE",
+    title: "Dine",
     para: "The Greystone is committed to seasonal cooking and procuring ingredients that are grown and harvested from sustainable and local food sources whenever possible.",
     links: [
-      { label: "EXPLORE THE RESTAURAUNT", href: "#" },
-      { label: "EXPLORE MANSION BAR", href: "#" },
+      { label: "EXPLORE THE RESTAURAUNT", href: "/dine/the-restaurant" },
+      { label: "EXPLORE MANSION BAR", href: "/dine/mansion-bar" },
     ],
   },
   reverse = false,

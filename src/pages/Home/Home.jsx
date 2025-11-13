@@ -36,7 +36,7 @@ const spaSplit = {
   img: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   title: "Spa ",
   para: "Rounding out the guest experience is a luxurious spa with six treatment rooms. Its comprehensive menu of treatments creates a unique and replenishing spa getaway unlike anything in the area. ",
-  links: [{ label: "EXPLORE FURTHER", href: "#" }],
+  links: [{ label: "EXPLORE FURTHER", href: "/spa" }],
 };
 
 export default function Home() {
