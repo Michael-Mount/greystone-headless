@@ -4,6 +4,11 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import NavGhostBtn from "../../Buttons/NavGhostBtn/NavGhostBtn";
 
+const dineLinks = [
+  { label: "The Resturaunt", path: "/dine/the-restaurant" },
+  { label: "Mansion Bar", path: "/dine/mansion-bar" },
+];
+
 export default function MobileNavDrawer({
   stayLinks,
   roomLinks,
@@ -132,6 +137,29 @@ export default function MobileNavDrawer({
             </Link>
             <ul className="space-y-2">
               {roomLinks.map(({ label, path }) => (
+                <li key={path}>
+                  <Link
+                    to={path}
+                    onClick={closeMenu}
+                    className="block text-sm tracking-[0.16em] uppercase"
+                  >
+                    {label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Dine */}
+          <div className="space-y-2">
+            <Link
+              to="/dine"
+              className="text-[11px] tracking-[0.25em] text-white/60"
+            >
+              Dine
+            </Link>
+            <ul className="space-y-2">
+              {dineLinks.map(({ label, path }) => (
                 <li key={path}>
                   <Link
                     to={path}

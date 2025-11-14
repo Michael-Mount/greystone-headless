@@ -49,19 +49,55 @@ export default function MansionBar() {
     <div>
       <HeroImg image={heroImg} title="Mansion Bar" />
       <CenteredText content="Enjoy the easy-going elegance of the Mansion Bar. Relax with a glass of wine, a hand-crafted cocktail or an ice cold beer. We invite you to get comfortable at The Greystone Inn." />
-      <div className="btn-banner flex justify-center  bg-[#003d51]">
-        <ul className="btn-list flex gap-7 p-8 ">
-          <li className="btn-item text-white text-xl uppercase border-2 px-8 py-2 hover:bg-white hover:text-[#003d51]">
+      <div className="btn-banner flex justify-center bg-[#003d51]">
+        <ul
+          className="
+      btn-list
+      flex flex-col items-stretch gap-4 p-4
+      md:flex-row md:items-center md:justify-center md:gap-7 md:p-8
+    "
+        >
+          <li
+            className="
+        btn-item
+        w-full text-center
+        text-white text-base md:text-xl
+        uppercase border-2
+        px-4 py-2 md:px-12 md:py-5
+        hover:bg-white hover:text-[#003d51]
+      "
+          >
             <a href="#">Bites</a>
           </li>
-          <li className="btn-item text-white text-xl uppercase border-2 px-8 py-2 hover:bg-white hover:text-[#003d51]">
+
+          <li
+            className="
+        btn-item
+        w-full text-center
+        text-white text-base md:text-xl
+        uppercase border-2
+        px-4 py-2 md:px-12 md:py-2
+        hover:bg-white hover:text-[#003d51]
+      "
+          >
             <a href="#">Seasonal and Local Cocktails</a>
           </li>
-          <li className="btn-item text-white text-xl uppercase border-2 px-8 py-2 hover:bg-white hover:text-[#003d51]">
+
+          <li
+            className="
+        btn-item
+        w-full text-center
+        text-white text-base md:text-xl
+        uppercase border-2
+        px-4 py-2 md:px-12 md:py-2
+        hover:bg-white hover:text-[#003d51]
+      "
+          >
             <a href="#">Local and Domestic Beers</a>
           </li>
         </ul>
       </div>
+
       <HourSplit
         img="https://greystoneinn.com/wp-content/uploads/2022/05/Greystone_Aug19-8732-2.jpg"
         title="Stand in image"

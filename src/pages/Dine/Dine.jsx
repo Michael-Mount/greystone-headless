@@ -44,7 +44,10 @@ reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
 pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
 culpa qui officia deserunt mollit anim id est laborum."
       />
-      <div className="card-wrapper flex gap-5 m-12" ref={cardRef}>
+      <div
+        className="card-wrapper flex flex-col md:flex-row gap-5 m-12"
+        ref={cardRef}
+      >
         {resturaunts.map((resturaunt) => (
           <RestaurantCard key={resturaunt.id} restaurant={resturaunt} />
         ))}

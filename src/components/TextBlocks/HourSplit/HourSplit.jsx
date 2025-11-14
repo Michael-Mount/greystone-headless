@@ -82,8 +82,11 @@ export default function HourSplit({ title, img }) {
   }, []);
 
   return (
-    <div className="split-wrapper flex w-full gap-5" ref={splitRef}>
-      <div className="split-content flex flex-col gap-5 justify-center flex-1 px-9 text-main">
+    <div
+      className="split-wrapper flex w-full gap-6 flex-col-reverse mt-[-15px] md:flex-row md:mt-0"
+      ref={splitRef}
+    >
+      <div className="split-content flex flex-col gap-5 justify-center flex-1 px-4 md:px-9 text-main text-center md:text-left">
         <p>
           <span className="hd text-4xl font-cursive">Hours</span>
           <br />
@@ -102,14 +105,16 @@ export default function HourSplit({ title, img }) {
           <br />
           NC 28 747
         </p>
-        <BasicBtn
-          bg="blue-btn"
-          title="Reserve Your Spot"
-          link="https://www.opentable.com/booking/restref/availability?restref=1042366"
-        />
+        <div className="mt-2 md:mt-4 flex justify-center md:justify-start">
+          <BasicBtn
+            bg="blue-btn"
+            title="Reserve Your Spot"
+            link="https://www.opentable.com/booking/restref/availability?restref=1042366"
+          />
+        </div>
       </div>
 
-      <div className="split-img relative overflow-hidden basis-1/2">
+      <div className="split-img relative overflow-hidden w-full md:basis-1/2 mt-4 md:mt-0">
         <img className="w-full h-full object-cover" src={img} alt={title} />
       </div>
     </div>

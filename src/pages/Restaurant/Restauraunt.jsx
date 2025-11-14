@@ -56,19 +56,55 @@ export default function Restauraunt() {
     <div>
       <HeroImage image={heroimg} title="The Restaurant" />
       <CenterdTextBlock content="Nestled within the serene landscapes of North Carolina, the award-winning restaurant at Greystone Inn offers a culinary experience that blends sophistication with the warmth of Southern hospitality. Boasting a picturesque setting overlooking Lake Toxaway, diners are treated to a menu crafted with locally sourced ingredients, showcasing the region's rich flavors and seasonal delights. With a commitment to excellence in both cuisine and service, every visit to this renowned establishment promises an unforgettable journey through fine dining, where every dish tells a story of passion and creativity." />
-      <div className="btn-banner flex justify-center  bg-[#003d51]">
-        <ul className="btn-list flex gap-7 p-8 ">
-          <li className="btn-item text-white text-xl uppercase border-2 px-8 py-2 hover:bg-white hover:text-[#003d51]">
-            <a href="#">Brunch Menu</a>
+      <div className="btn-banner flex justify-center bg-[#003d51]">
+        <ul
+          className="
+      btn-list
+      flex flex-col items-stretch gap-4 p-4
+      md:flex-row md:items-center md:justify-center md:gap-7 md:p-8
+    "
+        >
+          <li
+            className="
+        btn-item
+        w-full text-center
+        text-white text-base md:text-xl
+        uppercase border-2
+        px-4 py-2 md:px-12 md:py-2
+        hover:bg-white hover:text-[#003d51]
+      "
+          >
+            <a href="#">Brunch </a>
           </li>
-          <li className="btn-item text-white text-xl uppercase border-2 px-8 py-2 hover:bg-white hover:text-[#003d51]">
-            <a href="#">Dinner Menu</a>
+
+          <li
+            className="
+        btn-item
+        w-full text-center
+        text-white text-base md:text-xl
+        uppercase border-2
+        px-4 py-2 md:px-12 md:py-2
+        hover:bg-white hover:text-[#003d51]
+      "
+          >
+            <a href="#">Dinner</a>
           </li>
-          <li className="btn-item text-white text-xl uppercase border-2 px-8 py-2 hover:bg-white hover:text-[#003d51]">
-            <a href="#">Dessert & Cheeses</a>
+
+          <li
+            className="
+        btn-item
+        w-full text-center
+        text-white text-base md:text-xl
+        uppercase border-2
+        px-4 py-2 md:px-12 md:py-2
+        hover:bg-white hover:text-[#003d51]
+      "
+          >
+            <a href="#">Dessert</a>
           </li>
         </ul>
       </div>
+
       <HourSplit
         img="https://resizer.otstatic.com/v3/photos/48306796-2"
         title="stand in image"
