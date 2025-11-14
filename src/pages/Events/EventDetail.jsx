@@ -46,7 +46,7 @@ export default function EventDetail() {
   return (
     <main
       ref={containerRef}
-      className="min-h-screen bg-slate-50 py-16 px-4 sm:px-6 lg:px-10"
+      className="min-h-screen bg-slate-50 py-16 px-4 mt-24 sm:px-6 lg:px-10 lg:mt-24"
     >
       <section className="max-w-5xl mx-auto space-y-10">
         {/* Back link */}

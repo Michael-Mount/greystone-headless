@@ -8,7 +8,8 @@ export const events = [
     location: "The Terrace at The Greystone",
     shortDescription:
       "Sample curated wines from local vineyards accompanied by live jazz.",
-    image: "https://images.pexels.com/photos/2142264/pexels-photo-2142264.jpeg",
+    image:
+      "https://images.unsplash.com/photo-1690986535140-dc095e75b726?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     longDescription: [
       "Join our sommelier for an intimate evening of wine exploration. Discover small-batch selections from regional vineyards, each paired with seasonal canapés.",
       "Live jazz sets the mood as you sip under the string lights on our open-air terrace. This experience is limited in capacity to preserve the boutique atmosphere.",
