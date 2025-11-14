@@ -1,3 +1,4 @@
+// MainNav.jsx
 import "../index.css";
 import { useRef } from "react";
 import gsap from "gsap";
@@ -8,8 +9,11 @@ import { Link } from "react-router-dom";
 import DropdownNav from "../DropdownNav/DropdownNav";
 import HambrgerMenu from "../HamburgerMenu/HamburgerMenu";
 import NavGhostBtn from "../../Buttons/NavGhostBtn/NavGhostBtn";
+import MobileNavDrawer from "../MobileNavDrawer/MobileNavDrawer";
 
 import Logo from "../../../images/picsvg_download.svg";
+
+gsap.registerPlugin(ScrollTrigger);
 
 /* Dropdown Array */
 const roomLinks = [
@@ -29,7 +33,6 @@ const eventsLinks = [
   { label: "Experience", path: "/experience" },
 ];
 
-/* Ham Array */
 const hamLinks = [
   { label: "Accessibility", path: "/accessibility" },
   { label: "Blog", path: "/blog" },
@@ -37,27 +40,34 @@ const hamLinks = [
   { label: "Careers", path: "/careers" },
 ];
 
+const BOOK_URL =
+  "https://s006006.officialbookings.com/?activeBookingEngine=KBE&propertyCode=S006006&skd-checkin=2025-11-02&skd-checkout=2025-11-03&skd-property-code=S006006";
+
 export default function MainNav() {
   const navContainer = useRef(null);
   const bookBtn = useRef(null);
 
   useGSAP(() => {
+    // Use the whole document as the scroll trigger, not the fixed nav
+    const scroller = document.documentElement;
+
     gsap.to(navContainer.current, {
       backgroundColor: "#003d51",
       scrollTrigger: {
-        trigger: navContainer.current,
+        trigger: scroller,
         start: "top top",
-        end: "bottom top",
+        end: "+=200", // change over first 200px of scroll
         scrub: true,
       },
     });
 
     gsap.to(bookBtn.current, {
-      backgroundColor: "white !imporant",
+      backgroundColor: "white",
+      color: "#003d51",
       scrollTrigger: {
-        trigger: navContainer.current,
+        trigger: scroller,
         start: "top top",
-        end: "bottom top",
+        end: "+=200",
         scrub: true,
       },
     });
@@ -65,14 +75,17 @@ export default function MainNav() {
 
   return (
     <>
-      <nav className="nav" ref={navContainer}>
+      <nav className="nav fixed top-0 left-0 right-0 z-50" ref={navContainer}>
         <div className="navContainer">
+          {/* Logo */}
           <div className="logoContainer">
             <Link to="/">
               <img src={Logo} alt="The Greyston white logo" className="logo" />
             </Link>
           </div>
-          <ul className="mainMenu">
+
+          {/* DESKTOP MENU */}
+          <ul className="mainMenu hidden md:flex">
             <li className="listItem">
               <DropdownNav main="Stay" link="/stay" items={stayLinks} />
             </li>
@@ -92,13 +105,20 @@ export default function MainNav() {
               <HambrgerMenu items={hamLinks} />
             </li>
             <li className="listItem">
-              <NavGhostBtn
-                title="Reserve Now"
-                link="https://s006006.officialbookings.com/?activeBookingEngine=KBE&propertyCode=S006006&skd-checkin=2025-11-02&skd-checkout=2025-11-03&skd-property-code=S006006"
-                ref={bookBtn}
-              />
+              <NavGhostBtn title="Reserve Now" link={BOOK_URL} ref={bookBtn} />
             </li>
           </ul>
+
+          {/* MOBILE NAV (hamburger + drawer + overlay) */}
+          <div className="md:hidden">
+            <MobileNavDrawer
+              stayLinks={stayLinks}
+              roomLinks={roomLinks}
+              eventsLinks={eventsLinks}
+              hamLinks={hamLinks}
+              bookLink={BOOK_URL}
+            />
+          </div>
         </div>
       </nav>
     </>

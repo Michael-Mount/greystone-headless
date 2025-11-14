@@ -8,7 +8,6 @@ gsap.registerPlugin(ScrollTrigger, SplitText);
 
 //Navbar Components
 import MainNav from "./components/Navbar/MainNav/MainNav";
-import MobileNav from "./components/Navbar/MobileNav/MobileNav";
 import FullscreenLoader from "./components/Loaders/FullscreenLoader";
 
 //Footer Component

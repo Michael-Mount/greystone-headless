@@ -7,3 +7,10 @@
 
   --color-main: #003d51;
 }
+
+html,
+body,
+#root {
+  width: 100%;
+  overflow-x: hidden;
+}
