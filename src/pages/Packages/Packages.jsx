@@ -41,7 +41,7 @@ pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offi
       />
       <div
         ref={gridRef}
-        className="grid gap-6 m-9 sm:grid-cols-2 lg:grid-cols-2 p-48 al"
+        className="grid gap-6 m-9 sm:grid-cols-2 p-2  lg:grid-cols-2 lg:p-24 al"
       >
         {pkgs.map((pkg) => (
           <PackageCard key={pkg.id} pkg={pkg} />
