@@ -11,28 +11,28 @@ const introText =
 
 const gallery = [
   {
-    src: "https://lh3.googleusercontent.com/p/AF1QipO5122gHFISU-dB37r1tlZ0iMEZU4ngi2tZwvPx=s680-w680-h510-rw",
+    src: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     alt: "Demo site",
     aspect: "portrait",
   },
   {
-    src: "https://lh3.googleusercontent.com/p/AF1QipP4e4s0r7Ld5HL-O48BUaKSh5AsX32t50Xzzuxn=s680-w680-h510-rw",
+    src: "https://images.unsplash.com/photo-1677763856232-d9eb9e127e9b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     alt: "Demo site",
     aspect: "landscape",
   },
   {
-    src: "https://lh3.googleusercontent.com/p/AF1QipM6aEb_t9z-aYxALEqWuHSQEIOgA8ZrPZeFnQKG=s680-w680-h510-rw",
+    src: "https://plus.unsplash.com/premium_photo-1679430672295-3846f0cf0503?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     alt: "Demo site",
     aspect: "square",
   },
 
   {
-    src: "https://lh3.googleusercontent.com/p/AF1QipPVKY9SuBP8pVH-vnKWKP-f-f-eLTYUV0v8fmzx=s680-w680-h510-rw",
+    src: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     alt: "Demo site",
     aspect: "square",
   },
   {
-    src: "https://lh3.googleusercontent.com/p/AF1QipOIZkm5gdMt1C_dIoJLf_FI14J4iSd7dCAVwXNI=s680-w680-h510-rw",
+    src: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     alt: "Demo site",
     aspect: "landscape",
   },
