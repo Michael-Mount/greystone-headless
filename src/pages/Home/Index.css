@@ -21,3 +21,9 @@
     @apply h-full w-[50%] object-cover;
   }
 }
+
+@media (max-width: 720px) {
+  .drawHeader {
+    flex-direction: column;
+  }
+}

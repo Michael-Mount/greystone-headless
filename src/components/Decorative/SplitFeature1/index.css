@@ -40,3 +40,9 @@
   display: inline-block;
   will-change: transform;
 }
+
+@media (max-width: 720px) {
+  .splitFeatureContainer {
+    flex-direction: column;
+  }
+}

@@ -41,6 +41,7 @@ const spaSplit = {
 
 export default function Home() {
   const drawContainer = useRef(null);
+  const isMobile = window.innerWidth < 768;
 
   useGSAP(
     () => {
@@ -81,7 +82,7 @@ export default function Home() {
       <div className="drawHeader" ref={drawContainer}>
         <div className="svgContainer">
           <p>redefining</p>
-          <LuxuryDraw size={520} />
+          <LuxuryDraw size={isMobile ? 320 : 520} />
         </div>
         <div className="headerImgContainer">
           <img src={Lobby1} alt="a rustic leather chair" />

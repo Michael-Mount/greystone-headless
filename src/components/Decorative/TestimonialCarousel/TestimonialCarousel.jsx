@@ -8,19 +8,19 @@ gsap.registerPlugin(useGSAP);
 // -------- Demo data --------
 const demoTestimonials = [
   {
-    title: "TRULY GORGEOUS",
-    body: "I only came here for an outdoor event. It was Saturday and they had the cutest little farm market set up with produce they grow organically on their own grounds. And I did have lunch at the bar, plus a Bloody Mary. The bartender was nice, there was a little Bloody Mary bar so you could add your own toppings, and the turkey club with tots was delicious. It’s also beautiful inside, like truly gorgeous.",
-    author: "Victoria Davich",
+    title: "Staying Since 2005!",
+    body: "We have been going to The Greystone Inn for 25 years and have loved all of our stays. We started out in the Mansion but as the years went by, we chose an entry level room in the Hillmont building. We love the convenience of just one step and a private balcony overlooking the lake. The bedroom/living room is very large and comfortable. I certainly enjoyed the soaking tub! Our only disappointment was the lack of local television channels on the tv lineup. When planning outdoor activities, the perspective of a local meteorologist is extremely helpful. We are looking forward to our return trip there next summer.",
+    author: "Judith T.",
   },
   {
-    title: "WONDERFUL STAY",
-    body: "The staff went above and beyond. Our room was spotless, quiet, and had a lovely view of the grounds. Breakfast was excellent and service was warm without being intrusive.",
-    author: "James Miller",
+    title: "Exceptional boutique hotel",
+    body: "We discovered The Greystone Inn in the summer of 1988 and were immediately captivated by its breathtaking location & the mansion’s charm. We have been grateful & regular visitors ever since. The panoramic views of the lake and surrounding mountains are simply stunning. Waking up to the sunrise over the water and watching the sunset behind the mountain peaks was unforgettable. Paulette, Regan, Brittany and Autumn were attentive to our every need. The on-site restaurant offered delicious meals with exceptional views of the beautiful Lake Toxaway and the Blue Ridge mountains. ",
+    author: "Louellen B.",
   },
   {
-    title: "CAN'T WAIT TO RETURN",
-    body: "From check-in to checkout, everything felt effortless. Cozy spaces, great cocktails, and the best sleep I’ve had in months.",
-    author: "Amelia Chen",
+    title: "Beautiful Inn",
+    body: "Wonder lodge surrounded by beautiful scenery! This was our 2nd stay at the Inn and we can’t wait to go back again. The hospitality was amazing the room was spectacular and the food at the Inn was fabulous! It was an all around enjoyable birthday get away",
+    author: "Lup S.",
   },
 ];
 
@@ -74,7 +74,7 @@ export default function TestimonialCarousel({
   return (
     <section
       ref={wrapRef}
-      className={`relative mx-auto max-w-4xl px-24 py-14 text-center ${className} h-[60vh]`}
+      className={`relative mx-auto max-w-4xl px-24 py-14 text-center ${className} h-[80vh] md:h-[50vh]`}
       aria-roledescription="carousel"
     >
       {/* Title */}

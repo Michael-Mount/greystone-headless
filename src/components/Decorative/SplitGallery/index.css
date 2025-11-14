@@ -56,15 +56,24 @@
   .ThreeImageGallery {
     height: auto;
   }
+
   .ThreeImageGallery-Wrapper {
     flex-direction: column;
     gap: 16px;
+    height: auto; /* 🔧 override 100% */
+  }
+
+  .col-left,
+  .col-right {
+    flex: 0 0 auto; /* 🔧 stop them from trying to fill phantom height */
   }
 
   .topWrap,
   .bottomWrap {
     flex: 0 0 auto;
+    display: block; /* optional: simplify layout on mobile */
   }
+
   .topWrap img,
   .col-right img,
   .bottomWrap video {
