@@ -46,9 +46,15 @@ export default function MainNav() {
   const bookBtn = useRef(null);
   const location = useLocation();
 
-  // true for /events/some-slug, but not for /events
-  const isEventDetail =
-    location.pathname.startsWith("/events/") && location.pathname !== "/events";
+  const path = location.pathname;
+
+  // Any detail page like /events/:slug or /rentals/:slug
+  const detailPrefixes = ["/events/", "/rentals/"];
+  const basePaths = ["/events", "/rentals"];
+
+  const isDetailPage =
+    detailPrefixes.some((prefix) => path.startsWith(prefix)) &&
+    !basePaths.includes(path);
 
   useGSAP(
     () => {
@@ -60,7 +66,7 @@ export default function MainNav() {
       ScrollTrigger.getById("navColor")?.kill();
       ScrollTrigger.getById("bookBtn")?.kill();
 
-      if (isEventDetail) {
+      if (isDetailPage) {
         // DETAIL PAGES → static nav, no scroll animation
         gsap.set(nav, { backgroundColor: "#003d51" });
 
@@ -76,7 +82,7 @@ export default function MainNav() {
 
       // NON-DETAIL PAGES → reset to base state, then add scroll animation
 
-      // Set your "initial" look here (match whatever your CSS default is)
+      // Match your initial CSS look
       gsap.set(nav, { backgroundColor: "transparent" });
 
       if (btn) {
@@ -114,8 +120,8 @@ export default function MainNav() {
       }
     },
     {
-      // Re-run when we switch between detail and non-detail routes
-      dependencies: [isEventDetail],
+      // Re-run when we switch between detail and non-detail pages
+      dependencies: [isDetailPage],
     }
   );
 

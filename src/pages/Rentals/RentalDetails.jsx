@@ -61,7 +61,7 @@ export default function RentalDetail() {
   return (
     <main
       ref={containerRef}
-      className="min-h-screen bg-slate-50 py-16 px-4 sm:px-6 lg:px-10"
+      className="min-h-screen bg-slate-50 py-16 px-4 mt-20 sm:px-6 lg:px-10 md:mt-24"
     >
       <section className="max-w-6xl mx-auto space-y-10">
         {/* Back link + hero section */}
@@ -106,16 +106,10 @@ export default function RentalDetail() {
 
               <div className="flex flex-wrap gap-3 mt-6">
                 <a
-                  href="/stay"
+                  href="https://s006006.officialbookings.com/?activeBookingEngine=KBE&propertyCode=S006006&checkin=2025-11-02&checkout=2025-11-03&skd-checkin=2025-11-17&skd-checkout=2025-11-18&skd-property-code=S006006"
                   className="inline-flex items-center justify-center rounded-full bg-slate-900 px-6 py-2.5 text-xs font-semibold uppercase tracking-[0.2em] text-white hover:bg-slate-700 transition"
                 >
                   Check Availability
-                </a>
-                <a
-                  href="/contact"
-                  className="inline-flex items-center justify-center rounded-full border border-slate-900 px-6 py-2.5 text-xs font-semibold uppercase tracking-[0.2em] text-slate-900 hover:bg-slate-900 hover:text-white transition"
-                >
-                  Contact Reservations
                 </a>
               </div>
             </div>
