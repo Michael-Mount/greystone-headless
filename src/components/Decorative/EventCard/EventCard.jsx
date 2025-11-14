@@ -1,4 +1,3 @@
-// src/components/events/EventCard.jsx
 import { Link } from "react-router-dom";
 
 export default function EventCard({ event }) {

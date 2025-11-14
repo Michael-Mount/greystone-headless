@@ -1,9 +1,10 @@
 import "./index.css";
+import { Link } from "react-router-dom";
 
 export default function BasicBtn({ bg, title, link }) {
   return (
     <div className={bg}>
-      <a href={link}>{title}</a>
+      <Link to={link}>{title}</Link>
     </div>
   );
 }
