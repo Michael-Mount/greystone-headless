@@ -124,6 +124,12 @@ export default function MobileNavDrawer({
                   </Link>
                 </li>
               ))}
+              <Link
+                className="block text-sm tracking-[0.16em] uppercase"
+                to="/spa"
+              >
+                Spa
+              </Link>
             </ul>
           </div>
 

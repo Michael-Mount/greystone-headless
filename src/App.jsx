@@ -23,6 +23,7 @@ const Cottage = lazy(() => import("./pages/Cottage/Cottage"));
 const Dine = lazy(() => import("./pages/Dine/Dine"));
 const Enhancements = lazy(() => import("./pages/Enhancements/Enhancements"));
 const Events = lazy(() => import("./pages/Events/Evnets"));
+const EventDetail = lazy(() => import("./pages/Events/EventDetail"));
 const Experience = lazy(() => import("./pages/Experience/Experience"));
 const Gallery = lazy(() => import("./pages/Gallery/Gallery"));
 const Gifts = lazy(() => import("./pages/Gifts/Gifts"));
@@ -69,6 +70,7 @@ function App() {
           <Route path="/dine" element={<Dine />} />
           <Route path="/enhancements" element={<Enhancements />} />
           <Route path="/events" element={<Events />} />
+          <Route path="/events/:slug" element={<EventDetail />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/gifts" element={<Gifts />} />

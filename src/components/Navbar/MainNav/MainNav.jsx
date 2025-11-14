@@ -26,7 +26,6 @@ const roomLinks = [
 const stayLinks = [
   { label: "Packages & Offers", path: "/packages" },
   { label: "Enhancements", path: "/enhancements" },
-  { label: "Spa", path: "/spa" },
 ];
 
 const eventsLinks = [
@@ -36,7 +35,6 @@ const eventsLinks = [
 
 const hamLinks = [
   { label: "Accessibility", path: "/accessibility" },
-  { label: "Blog", path: "/blog" },
   { label: "Contact Us", path: "/contact" },
   { label: "Careers", path: "/careers" },
 ];
