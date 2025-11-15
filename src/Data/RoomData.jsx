@@ -1,10 +1,12 @@
 // roomsData.js
 export const rooms = [
   {
-    id: "superior-room",
+    id: 1,
     name: "Superior Room",
     description:
       "One-bedroom suite with screened porch, marina views, and separate living room.",
+    detailDescription:
+      "A comfortable test room layout with a spacious sleeping area, seating, and simple decor to demonstrate how room details will appear on the page.",
     amenities: ["Lake View", "Feather-top mattress", "Marina view"],
     images: [
       "https://greystoneinn.com/wp-content/uploads/2020/09/MansionSuperiorRm-1.jpg",
@@ -17,10 +19,12 @@ export const rooms = [
     location: "mansion",
   },
   {
-    id: "deluxe-room",
+    id: 2,
     name: "Deluxe Room",
     description:
       "One-bedroom suite with screened porch, marina views, and separate living room.",
+    detailDescription:
+      "A sample deluxe-style room used for layout testing, featuring a bed area, small sitting space, and flexible copy to show how longer descriptions wrap on the page.",
     amenities: ["Lake View", "Feather-top mattress", "Marina view"],
     images: [
       "https://greystoneinn.com/wp-content/uploads/2020/06/Graystone_Christmas_21-1888-HDR.jpg",
@@ -33,10 +37,12 @@ export const rooms = [
     location: "mansion",
   },
   {
-    id: "premium-room",
+    id: 3,
     name: "Premium Room",
     description:
       "One-bedroom suite with screened porch, marina views, and separate living room.",
+    detailDescription:
+      "A generic premium room description for testing that highlights a larger layout, comfortable furnishings, and space for text blocks and feature lists.",
     amenities: ["Lake View", "Feather-top mattress", "Marina view"],
     images: [
       "https://greystoneinn.com/wp-content/uploads/2020/09/MansionPremiumRm-4.jpg",
@@ -49,10 +55,12 @@ export const rooms = [
     location: "mansion",
   },
   {
-    id: "premium-terrace-room",
+    id: 4,
     name: "Premium Terrace Room",
     description:
       "One-bedroom suite with screened porch, marina views, and separate living room.",
+    detailDescription:
+      "Example copy for a room with outdoor access, used to preview how terrace or balcony language looks in the design without relying on real content.",
     amenities: ["Lake View", "Feather-top mattress", "Marina view"],
     images: [
       "https://greystoneinn.com/wp-content/uploads/2020/09/MansionPremiumTerrace-1.jpg",
@@ -65,10 +73,12 @@ export const rooms = [
     location: "mansion",
   },
   {
-    id: "premium-suite",
+    id: 5,
     name: "Premium Suite",
     description:
       "One-bedroom suite with screened porch, marina views, and separate living room.",
+    detailDescription:
+      "A placeholder suite description that suggests multiple spaces, such as a bedroom and sitting area, so you can confirm spacing and hierarchy on the detail layout.",
     amenities: ["Lake View", "Feather-top mattress", "Marina view"],
     images: [
       "https://greystoneinn.com/wp-content/uploads/2020/09/MansionPremiumSuite-2.jpg",
@@ -81,10 +91,12 @@ export const rooms = [
     location: "mansion",
   },
   {
-    id: "rockefeller-suite",
+    id: 6,
     name: "Rockefeller Suite",
     description:
       "One-bedroom suite with screened porch, marina views, and separate living room.",
+    detailDescription:
+      "Test content for a named suite, giving you a slightly longer room title and enough body copy to showcase headings, paragraphs, and image groupings.",
     amenities: ["Lake View", "Feather-top mattress", "Marina view"],
     images: [
       "https://greystoneinn.com/wp-content/uploads/2020/09/Mansion-Rockefeller-7.jpg",
@@ -97,10 +109,12 @@ export const rooms = [
     location: "mansion",
   },
   {
-    id: "hillmont-classic",
+    id: 7,
     name: "Hillmont Classic",
     description:
       "One-bedroom suite with screened porch, marina views, and separate living room.",
+    detailDescription:
+      "Generic description text for a classic-style room, meant to help you preview how different room collections appear when filtered or grouped by location.",
     amenities: ["Lake View", "Feather-top mattress", "Marina view"],
     images: [
       "https://greystoneinn.com/wp-content/uploads/2020/09/HillmontClassic-1.jpg",
@@ -113,10 +127,12 @@ export const rooms = [
     location: "hillmont",
   },
   {
-    id: "hillmont-signature",
+    id: 8,
     name: "Hillmont Signature",
     description:
       "One-bedroom suite with screened porch, marina views, and separate living room.",
+    detailDescription:
+      "Sample signature room text focusing on comfort and atmosphere, giving enough length to test responsive behavior and line wrapping on various screen sizes.",
     amenities: ["Lake View", "Feather-top mattress", "Marina view"],
     images: [
       "https://greystoneinn.com/wp-content/uploads/2020/09/HillmontSignature-3.jpg",
@@ -129,10 +145,12 @@ export const rooms = [
     location: "hillmont",
   },
   {
-    id: "lakeside-cottage",
+    id: 9,
     name: "Lakeside Cottage",
     description:
       "One-bedroom suite with screened porch, marina views, and separate living room.",
+    detailDescription:
+      "Placeholder cottage description emphasizing cozy, relaxed vibes and proximity to the water, purely for layout, typography, and image gallery testing.",
     amenities: ["Lake View", "Feather-top mattress", "Marina view"],
     images: [
       "https://greystoneinn.com/wp-content/uploads/2020/11/Graystone_Christmas_21-1809-HDR.jpg",
@@ -145,10 +163,12 @@ export const rooms = [
     location: "lakeside",
   },
   {
-    id: "dancing-bear",
+    id: 10,
     name: "Dancing Bear",
     description:
       "One-bedroom suite with screened porch, marina views, and separate living room.",
+    detailDescription:
+      "A fun, rental-style room description used just for testing, giving you a unique room name and enough neutral copy to verify consistency across templates.",
     amenities: ["Lake View", "Feather-top mattress", "Marina view"],
     images: [
       "https://greystoneinn.com/wp-content/uploads/2022/03/Greystone_April22-19393.jpg",
@@ -161,10 +181,12 @@ export const rooms = [
     location: "rentals",
   },
   {
-    id: "laurel-lodge",
+    id: 11,
     name: "Laurel Lodge",
     description:
       "One-bedroom suite with screened porch, marina views, and separate living room.",
+    detailDescription:
+      "Generic lodge description text that lets you preview a rental with multiple rooms, shared spaces, and a simple narrative about comfort and convenience.",
     amenities: ["Lake View", "Feather-top mattress", "Marina view"],
     images: [
       "https://greystoneinn.com/wp-content/uploads/2020/07/LaurelLodge-living1.jpg",
@@ -177,10 +199,12 @@ export const rooms = [
     location: "rentals",
   },
   {
-    id: "bond-voyage",
+    id: 12,
     name: "Bond Voyage",
     description:
       "One-bedroom suite with screened porch, marina views, and separate living room.",
+    detailDescription:
+      "Sample copy for a playfully named rental, ideal for confirming that longer names, slugs, and body text all line up correctly in your room detail component.",
     amenities: ["Lake View", "Feather-top mattress", "Marina view"],
     images: [
       "https://greystoneinn.com/wp-content/uploads/2020/07/IMG_2236_1200x900.jpg",
@@ -193,10 +217,12 @@ export const rooms = [
     location: "rentals",
   },
   {
-    id: "fairway-vista",
+    id: 13,
     name: "Fairway Vista",
     description:
       "One-bedroom suite with screened porch, marina views, and separate living room.",
+    detailDescription:
+      "A placeholder description focused on scenic views and open layouts, giving you another variation of neutral text to test scrolling and content stacking.",
     amenities: ["Lake View", "Feather-top mattress", "Marina view"],
     images: [
       "https://greystoneinn.com/wp-content/uploads/2025/10/IMG_6511.jpeg",
@@ -209,10 +235,12 @@ export const rooms = [
     location: "rentals",
   },
   {
-    id: "gathering-on-the-green",
+    id: 14,
     name: "Gathering on the Green",
     description:
       "One-bedroom suite with screened porch, marina views, and separate living room.",
+    detailDescription:
+      "Example text for a larger group-friendly rental, with enough description to visualize gatherings, extended stays, and how multi-line titles render in the UI.",
     amenities: ["Lake View", "Feather-top mattress", "Marina view"],
     images: [
       "https://greystoneinn.com/wp-content/uploads/2023/11/Greystone_Fall23_Rental-4377-HDR.jpg",
@@ -225,10 +253,12 @@ export const rooms = [
     location: "rentals",
   },
   {
-    id: "cedar-rise",
+    id: 15,
     name: "Cedar Rise",
     description:
       "One-bedroom suite with screened porch, marina views, and separate living room.",
+    detailDescription:
+      "Neutral, testing-only description for a rental with a warm, woodsy feel, written to help you fine-tune fonts, spacing, and responsive behavior on the page.",
     amenities: ["Lake View", "Feather-top mattress", "Marina view"],
     images: [
       "https://greystoneinn.com/wp-content/uploads/2020/09/CedarRise-3134.jpg",
@@ -241,10 +271,12 @@ export const rooms = [
     location: "rentals",
   },
   {
-    id: "cardinal-zen",
+    id: 16,
     name: "Cardinal Zen",
     description:
       "One-bedroom suite with screened porch, marina views, and separate living room.",
+    detailDescription:
+      "A calm, simple, layout-focused description meant to suggest a peaceful retreat, giving you another test case for verifying the full room detail experience.",
     amenities: ["Lake View", "Feather-top mattress", "Marina view"],
     images: [
       "https://greystoneinn.com/wp-content/uploads/2020/09/eat-in-kitchen.jpg",

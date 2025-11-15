@@ -43,8 +43,8 @@ export default function MainNav() {
   const path = location.pathname;
 
   // Any detail page like /events/:slug or /rentals/:slug
-  const detailPrefixes = ["/events/", "/rentals/", "/packages/"];
-  const basePaths = ["/events", "/rentals", "/packages"];
+  const detailPrefixes = ["/events/", "/rentals/", "/packages/", "/rooms/"];
+  const basePaths = ["/events", "/rentals", "/packages", "/rooms"];
 
   const isDetailPage =
     detailPrefixes.some((prefix) => path.startsWith(prefix)) &&
