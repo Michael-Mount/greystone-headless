@@ -70,23 +70,23 @@ export default function MobileNavDrawer({
       {/* HAMBURGER BUTTON */}
       <button
         type="button"
-        className="flex flex-col justify-between w-7 h-6 focus:outline-none"
+        className="relative z-[60] flex flex-col justify-between w-8 h-7 focus:outline-none"
         onClick={toggleMenu}
         aria-label={isOpen ? "Close main menu" : "Open main menu"}
       >
         <span
-          className={`h-[2px] bg-white rounded origin-left transition-transform duration-300 ${
-            isOpen ? "rotate-45 translate-y-[7px]" : ""
+          className={`hamburger-line origin-left transition-transform duration-300 ${
+            isOpen ? "rotate-45 translate-y-[6px]" : ""
           }`}
         ></span>
         <span
-          className={`h-[2px] bg-white rounded transition-opacity duration-300 ${
+          className={`hamburger-line transition-opacity duration-300 ${
             isOpen ? "opacity-0" : "opacity-100"
           }`}
         ></span>
         <span
-          className={`h-[2px] bg-white rounded origin-left transition-transform duration-300 ${
-            isOpen ? "-rotate-45 -translate-y-[7px]" : ""
+          className={`hamburger-line origin-left transition-transform duration-300 ${
+            isOpen ? "-rotate-45 -translate-y-[6px]" : ""
           }`}
         ></span>
       </button>

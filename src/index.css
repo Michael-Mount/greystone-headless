@@ -15,6 +15,15 @@ body,
   overflow-x: hidden;
 }
 
+.hamburger-line {
+  display: block;
+  width: 100%;
+  height: 3px;
+  border-radius: 9999px;
+  background-color: #ffffff;
+  box-shadow: 0 0 0.5px rgba(0, 0, 0, 0.4);
+}
+
 @layer components {
   .nav {
     @apply bg-transparent w-full fixed top-0 z-50 text-[15px] p-[15px] uppercase;
