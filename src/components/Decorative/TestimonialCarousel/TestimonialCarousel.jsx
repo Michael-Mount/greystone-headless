@@ -74,7 +74,7 @@ export default function TestimonialCarousel({
   return (
     <section
       ref={wrapRef}
-      className={`relative mx-auto max-w-4xl px-24 py-14 text-center ${className} h-[80vh] md:h-[50vh]`}
+      className={`relative mx-auto max-w-4xl px-24 py-14 text-center ${className} h-[80vh] md:h-[60vh]`}
       aria-roledescription="carousel"
     >
       {/* Title */}

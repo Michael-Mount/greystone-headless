@@ -22,15 +22,9 @@ const roomLinks = [
   { label: "Rentals", path: "/rentals" },
 ];
 
-const stayLinks = [
-  { label: "Packages & Offers", path: "/packages" },
-  { label: "Enhancements", path: "/enhancements" },
-];
+const stayLinks = [{ label: "Packages & Offers", path: "/packages" }];
 
-const eventsLinks = [
-  { label: "Activites", path: "/activities" },
-  { label: "Experience", path: "/experience" },
-];
+const eventsLinks = [{ label: "Activites", path: "/activities" }];
 
 const hamLinks = [
   { label: "Accessibility", path: "/accessibility" },
@@ -49,8 +43,8 @@ export default function MainNav() {
   const path = location.pathname;
 
   // Any detail page like /events/:slug or /rentals/:slug
-  const detailPrefixes = ["/events/", "/rentals/"];
-  const basePaths = ["/events", "/rentals"];
+  const detailPrefixes = ["/events/", "/rentals/", "/packages/"];
+  const basePaths = ["/events", "/rentals", "/packages"];
 
   const isDetailPage =
     detailPrefixes.some((prefix) => path.startsWith(prefix)) &&
@@ -79,8 +73,6 @@ export default function MainNav() {
 
         return; // don't create any ScrollTriggers
       }
-
-      // NON-DETAIL PAGES → reset to base state, then add scroll animation
 
       // Match your initial CSS look
       gsap.set(nav, { backgroundColor: "transparent" });

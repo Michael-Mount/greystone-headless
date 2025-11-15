@@ -32,6 +32,7 @@ const Home = lazy(() => import("./pages/Home/Home"));
 const Mansion = lazy(() => import("./pages/Mansion/Mansion"));
 const MansionBar = lazy(() => import("./pages/MansionBar/MansionBar"));
 const Packages = lazy(() => import("./pages/Packages/Packages"));
+const PackagesDetail = lazy(() => import("./pages/Packages/PackagesDetails"));
 const Policies = lazy(() => import("./pages/Policies/Policies"));
 const Press = lazy(() => import("./pages/Press/Press"));
 const Rentals = lazy(() => import("./pages/Rentals/Rentals"));
@@ -79,6 +80,7 @@ function App() {
           <Route path="/mansion" element={<Mansion />} />
           <Route path="/dine/mansion-bar" element={<MansionBar />} />
           <Route path="/packages" element={<Packages />} />
+          <Route path="/packages/:slug" element={<PackagesDetail />} />
           <Route path="/policies" element={<Policies />} />
           <Route path="/press" element={<Press />} />
           <Route path="/rentals" element={<Rentals />} />

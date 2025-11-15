@@ -23,7 +23,11 @@ export default function PackageCard({ pkg }) {
         </h3>
         <p className="text-base md:text-lg">{desciption}</p>
         <div className="mt-2 md:mt-4 flex justify-center md:justify-start">
-          <BasicBtn bg="blue-btn" link={slug} title="+ Explore Package" />
+          <BasicBtn
+            bg="blue-btn"
+            link={`/packages/${pkg.slug}`}
+            title="+ Explore Package"
+          />
         </div>
       </div>
     </div>
