@@ -49,7 +49,7 @@ export default function SplitFeature1({ title, content, img, alt }) {
         <img src={img} alt={alt} id="splitImg" />
       </div>
       <div className="splitContent">
-        <p className="titleSplit text-6xl">{title}</p>
+        <p className="titleSplit font-cursive text-8xl">{title}</p>
         <p className="paraSplit text-3xl">{content}</p>
         <NavGhostBtn title="Explore the Lake" link="#" />
       </div>
