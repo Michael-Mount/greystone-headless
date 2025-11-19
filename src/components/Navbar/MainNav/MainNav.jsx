@@ -52,6 +52,7 @@ export default function MainNav() {
     "/packages/",
     "/rooms/",
     "/Experience/",
+    "/experience/",
   ];
   const basePaths = [
     "/events",
@@ -59,6 +60,7 @@ export default function MainNav() {
     "/packages",
     "/rooms",
     "/Experience",
+    "/experience",
   ];
 
   const isDetailPage =
