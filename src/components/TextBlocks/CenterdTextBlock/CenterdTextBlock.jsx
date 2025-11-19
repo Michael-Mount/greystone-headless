@@ -18,40 +18,48 @@ export default function CenteredTextBlock({ content }) {
       let tl;
 
       const buildAnimation = () => {
-        // If we already split once, revert it before rebuilding
+        // Revert any previous split
         if (split) {
           split.revert();
         }
 
+        // Fresh split for current layout
         split = new SplitText(introRef.current, { type: "lines" });
+
+        // Ensure the paragraph is visible but lines start hidden/offset
+        gsap.set(split.lines, {
+          opacity: 0,
+          yPercent: 100,
+        });
 
         // Kill old timeline if it exists
         if (tl) tl.kill();
 
+        // New scroll-based timeline
         tl = gsap.timeline({
           scrollTrigger: {
             trigger: wrapperRef.current,
-            start: "top 80%",
+            start: "top 60%",
             end: "bottom top",
             scrub: true,
             invalidateOnRefresh: true,
           },
         });
 
-        tl.from(split.lines, {
-          opacity: 0,
-          yPercent: 100,
+        tl.to(split.lines, {
+          opacity: 1,
+          yPercent: 0,
           duration: 1.8,
           ease: "expo.out",
           stagger: 0.06,
-          delay: 1,
+          // no delay when using scrub
         });
       };
 
       // Build once on mount
       buildAnimation();
 
-      // Rebuild SplitText + animation whenever ScrollTrigger refreshes (on resize, etc.)
+      // Rebuild on refresh (which happens on resize, etc.)
       const onRefresh = () => buildAnimation();
       ScrollTrigger.addEventListener("refreshInit", onRefresh);
 
