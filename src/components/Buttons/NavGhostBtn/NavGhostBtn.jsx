@@ -1,9 +1,10 @@
+import { Link } from "react-router-dom";
 import "./index.css";
 
 export default function NavGhostBtn({ title, link }) {
   return (
     <div className="Btn">
-      <a href={link}>{title}</a>
+      <Link to={link}>{title}</Link>
     </div>
   );
 }

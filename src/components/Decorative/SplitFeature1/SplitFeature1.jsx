@@ -8,7 +8,7 @@ import NavGhostBtn from "../../Buttons/NavGhostBtn/NavGhostBtn";
 
 gsap.registerPlugin(ScrollTrigger, SplitText, useGSAP);
 
-export default function SplitFeature1({ title, content, img, alt }) {
+export default function SplitFeature1({ title, content, img, alt, link }) {
   const sfa = useRef(null);
 
   useGSAP(
@@ -29,11 +29,9 @@ export default function SplitFeature1({ title, content, img, alt }) {
           start: "top 80%",
           toggleActions: "play none none none",
           once: true,
-          // markers: true,
         },
       });
 
-      // 1) Fade/slide the whole block in
       tl.to(root, {
         autoAlpha: 1,
         yPercent: 0,
@@ -51,7 +49,7 @@ export default function SplitFeature1({ title, content, img, alt }) {
       <div className="splitContent">
         <p className="titleSplit font-cursive text-8xl">{title}</p>
         <p className="paraSplit text-3xl">{content}</p>
-        <NavGhostBtn title="Explore the Lake" link="#" />
+        <NavGhostBtn title="Explore the Lake" link={link} />
       </div>
     </div>
   );

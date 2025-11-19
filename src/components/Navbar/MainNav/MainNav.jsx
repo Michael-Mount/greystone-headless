@@ -22,7 +22,10 @@ const roomLinks = [
   { label: "Rentals", path: "/rentals" },
 ];
 
-const stayLinks = [{ label: "Packages & Offers", path: "/packages" }];
+const stayLinks = [
+  { label: "Packages & Offers", path: "/packages" },
+  { label: "Experiences & Activities", path: "/experience" },
+];
 
 const eventsLinks = [{ label: "Activites", path: "/activities" }];
 
@@ -43,8 +46,20 @@ export default function MainNav() {
   const path = location.pathname;
 
   // Any detail page like /events/:slug or /rentals/:slug
-  const detailPrefixes = ["/events/", "/rentals/", "/packages/", "/rooms/"];
-  const basePaths = ["/events", "/rentals", "/packages", "/rooms"];
+  const detailPrefixes = [
+    "/events/",
+    "/rentals/",
+    "/packages/",
+    "/rooms/",
+    "/Experience/",
+  ];
+  const basePaths = [
+    "/events",
+    "/rentals",
+    "/packages",
+    "/rooms",
+    "/Experience",
+  ];
 
   const isDetailPage =
     detailPrefixes.some((prefix) => path.startsWith(prefix)) &&

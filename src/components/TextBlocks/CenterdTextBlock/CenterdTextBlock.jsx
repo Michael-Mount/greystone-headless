@@ -1,4 +1,3 @@
-// CenteredTextBlock.jsx
 import "./index.css";
 
 import { useRef } from "react";
@@ -52,14 +51,12 @@ export default function CenteredTextBlock({ content }) {
           duration: 1.8,
           ease: "expo.out",
           stagger: 0.06,
-          // no delay when using scrub
         });
       };
 
       // Build once on mount
       buildAnimation();
 
-      // Rebuild on refresh (which happens on resize, etc.)
       const onRefresh = () => buildAnimation();
       ScrollTrigger.addEventListener("refreshInit", onRefresh);
 

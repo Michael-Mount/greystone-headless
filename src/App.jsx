@@ -25,6 +25,9 @@ const Enhancements = lazy(() => import("./pages/Enhancements/Enhancements"));
 const Events = lazy(() => import("./pages/Events/Evnets"));
 const EventDetail = lazy(() => import("./pages/Events/EventDetail"));
 const Experience = lazy(() => import("./pages/Experience/Experience"));
+const ExperienceDetail = lazy(() =>
+  import("./pages/Experience/ExperienceDetail")
+);
 const Gallery = lazy(() => import("./pages/Gallery/Gallery"));
 const Gifts = lazy(() => import("./pages/Gifts/Gifts"));
 const Hillmont = lazy(() => import("./pages/Hillmont/Hillmont"));
@@ -75,6 +78,7 @@ function App() {
           <Route path="/events" element={<Events />} />
           <Route path="/events/:slug" element={<EventDetail />} />
           <Route path="/experience" element={<Experience />} />
+          <Route path="/experience/:slug" element={<ExperienceDetail />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/gifts" element={<Gifts />} />
           <Route path="/hillmont" element={<Hillmont />} />

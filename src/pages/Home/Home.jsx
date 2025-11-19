@@ -94,6 +94,7 @@ export default function Home() {
         content="There are endless things to do, although it’s perfectly alright to do nothing at all..."
         img={Lake2}
         alt="a wooden boat on a lake"
+        link="/experience"
       />
       <SplitGallery gallery={mainGallery} />
       <TestimonialCarousel />
