@@ -91,4 +91,48 @@ export const experiences = [
       },
     ],
   },
+  {
+    id: 4,
+    slug: "fishing",
+    title: "Fishing",
+    image:
+      "https://plus.unsplash.com/premium_photo-1661894030221-5663df1a991d?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    location: "On-Site",
+    longDescription:
+      "Step back in time and experience Lake Toxaway the way it was meant to be enjoyed—aboard a classic wooden boat. From the moment you step onto the varnished deck, the pace of life slows: the engine hums softly, the mountains reflect in the water, and the shoreline drifts by in a quiet panorama of trees and sky. Whether you’re planning a sunset cruise, a leisurely daytime tour, or a special celebration on the water, our wooden boat rentals offer a nostalgic, one-of-a-kind way to explore North Carolina’s largest private lake.",
+    activities: [
+      {
+        id: 1,
+        name: "GREYSTONE RENTALS",
+        image:
+          "https://greystoneinn.com/wp-content/uploads/2021/01/Greystone_Summer20-4449.jpg",
+        description:
+          "Fishing rods and bait are available at The Greystone for guests who wish to fish off our dock. $10 per person per day, includes tackle box (children under 5 years are free when accompanied by an adult) Fishing license is required for all guests over 16 years of age. Guests 16 years and younger must be accompanied by an adult with a fishing license. Our Guest Services team will be happy to assist you in getting your fishing license.",
+      },
+      {
+        id: 2,
+        name: "LAKE TOXAWAY MARINA",
+        image:
+          "https://greystoneinn.com/wp-content/uploads/2020/09/Greystone_Summer20-4798.jpg",
+        description:
+          "Mid April – Mid May Weekends Only 10am-3pm Mid May – Late September Open Daily 9am – 5pm Fishing boats are available for rent through the Lake Toxaway Marina",
+      },
+      {
+        id: 3,
+        name: "Guided Fly Fishing",
+        image:
+          "https://greystoneinn.com/wp-content/uploads/2020/08/NR-US-GSI-Fly-Fishing-8.jpg",
+        description:
+          "There are countless miles of trout water in Western North Carolina and Lake Toxaway is at the epicenter of great trout fishing.  From the beginner who needs help tying the knot, to the expert who wants to target the largest fish in the river, the area boasts several guided fly-fishing opportunities. Available year round.",
+      },
+      {
+        id: 4,
+        name: "FLY FISHING CLINIC",
+        image:
+          "https://greystoneinn.com/wp-content/uploads/2020/08/23715087_1717256234953947_1652871843_o.jpg",
+        description:
+          "Guests will enjoy a School of Trout class with the fly fishing guides of Headwaters Outfitters.  Reservations are required in advance for this 3 hour course covering just the basics of fly fishing, casting, knot tying and rigging. $180 per person. Apply what you’ve learned in the instructional, 3 hour course by combining with a 1/2 day, guided fly fishing trip. Costs include waders, boots, rods and reels $570 per person.",
+      },
+    ],
+  },
 ];

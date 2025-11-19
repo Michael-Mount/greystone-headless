@@ -67,7 +67,7 @@ export default function ExperienceDetail() {
                 Signature Experience
               </p>
 
-              <h1 className="text-3xl md:text-5xl font-semibold text-slate-900">
+              <h1 className="bg-[#003e52] text-3xl md:text-5xl font-cursive text-slate-900">
                 {title}
               </h1>
 
@@ -182,18 +182,18 @@ export default function ExperienceDetail() {
               </p>
             </div>
             <div className="flex flex-wrap gap-3">
-              <a
-                href="/stay"
+              <Link
+                to="/stay"
                 className="inline-flex items-center justify-center rounded-full bg-white px-6 py-2.5 text-xs font-semibold uppercase tracking-[0.2em] text-slate-900 hover:bg-slate-100 transition"
               >
                 View Rooms & Suites
-              </a>
-              <a
-                href="/contact"
+              </Link>
+              <Link
+                to="/contact"
                 className="inline-flex items-center justify-center rounded-full border border-white px-6 py-2.5 text-xs font-semibold uppercase tracking-[0.2em] text-white hover:bg-white hover:text-slate-900 transition"
               >
                 Contact Concierge
-              </a>
+              </Link>
             </div>
           </div>
         </section>
