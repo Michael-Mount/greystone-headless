@@ -34,11 +34,7 @@ export default function Packages() {
   return (
     <div>
       <HeroImage image={heroImg} title="Packages & Specials" />
-      <CenteredTextBlock
-        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-      />
+      <CenteredTextBlock content="At The Greystone Inn, every stay is an occasion. Our curated packages and seasonal offers are designed to make the most of life on Lake Toxaway—from romantic escapes and spa-focused retreats to family adventures and long weekends with friends. Enhance your time in the mountains with thoughtful inclusions like lakeside dining, wellness experiences, and signature activities on North Carolina’s largest private lake." />
       <div
         ref={gridRef}
         className="grid gap-6 m-9 sm:grid-cols-2 p-2  lg:grid-cols-2 lg:p-24 al"

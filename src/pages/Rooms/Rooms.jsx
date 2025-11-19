@@ -11,7 +11,7 @@ const heroImg =
   "https://greystoneinn.com/wp-content/uploads/2020/12/GreystoneInn_Rooms-9150_HEADER.jpg";
 
 const introText =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+  "From gracious mansion rooms in our historic inn to spacious private homes tucked around Lake Toxaway, every stay at The Greystone Inn is designed to feel like your own mountain retreat. Explore our collection of guest rooms, suites, and vacation rentals—each with its own character, thoughtful comforts, and a sense of place rooted in the lake and the Blue Ridge Mountains.";
 
 export default function Rooms() {
   const gridRef = useRef(null);

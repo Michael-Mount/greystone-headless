@@ -4,8 +4,9 @@
   align-items: center;
   gap: 25px;
   align-content: center;
-  padding: 75px;
-  margin: 0 300px;
+  padding: 75px 20px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .CenteredTextBlock-Wrapper img {
