@@ -81,12 +81,12 @@ export default function EventDetail() {
               </p>
 
               <div className="flex flex-wrap gap-3 mt-6">
-                <a
-                  href="/stay"
+                <Link
+                  to="https://s006006.officialbookings.com/?activeBookingEngine=KBE&propertyCode=S006006&skd-checkin=2025-11-02&skd-checkout=2025-11-03&skd-property-code=S006006"
                   className="inline-flex items-center justify-center rounded-full bg-[#003d51] px-6 py-2.5 text-xs font-semibold uppercase tracking-[0.2em] text-white hover:bg-white transition hover:text-[#003d51]"
                 >
                   Reserve Your Stay
-                </a>
+                </Link>
               </div>
             </div>
 
