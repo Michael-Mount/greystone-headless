@@ -25,6 +25,7 @@ const roomLinks = [
 const stayLinks = [
   { label: "Packages & Offers", path: "/packages" },
   { label: "Experiences & Activities", path: "/experience" },
+  { label: "Amenities", path: "/amenities" },
 ];
 
 const eventsLinks = [{ label: "Activites", path: "/activities" }];
