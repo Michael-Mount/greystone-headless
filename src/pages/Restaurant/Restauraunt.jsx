@@ -44,6 +44,11 @@ const gallery = [
   },
 ];
 
+import wineLogo from "../../images/wineLogo.png";
+import fiveLogo from "../../images/ fiveLogo.png";
+import southLogo from "../../images/SouthsBestLogo.png";
+import wbaLogo from "../../images/WBALogo.png";
+
 const cateringSplit = {
   img: "https://greystoneinn.com/wp-content/uploads/2020/11/Greystone-Dine-Parent-Catering.jpg",
   title: "Catering",
@@ -109,6 +114,31 @@ export default function Restauraunt() {
         img="https://resizer.otstatic.com/v3/photos/48306796-2"
         title="stand in image"
       />
+      <div className="awardWrapper w-full flex justify-center px-4 py-6">
+        <div className="awardContainer flex flex-wrap items-center justify-center gap-6 sm:gap-10 md:gap-16">
+          <img
+            src={wineLogo}
+            alt="Wine Spectator Best 2023 Award"
+            className="h-16 sm:h-18 md:h-28 w-auto object-contain"
+          />
+          <img
+            src={fiveLogo}
+            alt="500 Times Best Dine 2024 Award"
+            className="h-16 sm:h-18 md:h-28 w-auto object-contain"
+          />
+          <img
+            src={wbaLogo}
+            alt="World Best Dine 2022 Award"
+            className="h-16 sm:h-18 md:h-28 w-auto object-contain"
+          />
+          <img
+            src={southLogo}
+            alt="Best Southern Dine 2021 Award"
+            className="h-16 sm:h-18 md:h-28 w-auto object-contain"
+          />
+        </div>
+      </div>
+
       <PhotoGridGallery images={gallery} />
       <SplitFeature2 content={cateringSplit} />
     </div>

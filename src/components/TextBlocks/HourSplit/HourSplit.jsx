@@ -88,7 +88,7 @@ export default function HourSplit({ title, img }) {
     >
       <div className="split-content flex flex-col gap-5 justify-center flex-1 px-4 md:px-9 text-main text-center md:text-left">
         <p>
-          <span className="hd text-4xl font-cursive">Hours</span>
+          <span className="hd text-6xl font-cursive">Hours</span>
           <br />
           Friday - Sunday <br />
           Brunch: 8:00am to 2:00pm
@@ -98,7 +98,7 @@ export default function HourSplit({ title, img }) {
           Dinner Menu: 5:00pm to 9:00pm
         </p>
         <p>
-          <span className="hd text-4xl font-cursive">Location</span>
+          <span className="hd text-6xl font-cursive">Location</span>
           <br />
           220 Greystone Ln <br />
           Lake Toxaway
