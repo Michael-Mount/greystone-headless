@@ -75,8 +75,8 @@ function App() {
           <Route path="/cottage" element={<Cottage />} />
           <Route path="/dine" element={<Dine />} />
           <Route path="/enhancements" element={<Enhancements />} />
-          <Route path="/events" element={<Events />} />
-          <Route path="/events/:slug" element={<EventDetail />} />
+          <Route path="/explore" element={<Events />} />
+          <Route path="/explore/:slug" element={<EventDetail />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/experience/:slug" element={<ExperienceDetail />} />
           <Route path="/gallery" element={<Gallery />} />

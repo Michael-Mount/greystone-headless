@@ -121,7 +121,7 @@ export default function EventDetail() {
               <ul className="space-y-2 text-sm text-slate-700">
                 {event.highlights?.map((item, idx) => (
                   <li key={idx} className="flex gap-2">
-                    <span className="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-500" />
+                    <span className="mt-1 h-1.5 w-1.5 rounded-full bg-[#003d51]" />
                     <span>{item}</span>
                   </li>
                 ))}

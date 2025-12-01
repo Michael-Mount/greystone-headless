@@ -29,7 +29,7 @@ export default function EventCard({ event }) {
 
         <div>
           <Link
-            to={`/events/${event.slug}`}
+            to={`/explore/${event.slug}`}
             className="inline-flex items-center gap-2 rounded-full border border-slate-900 px-5 py-2 text-sm font-medium uppercase tracking-[0.18em] hover:bg-slate-900 hover:text-white transition"
           >
             Learn More

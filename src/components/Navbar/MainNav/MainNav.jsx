@@ -30,6 +30,8 @@ const stayLinks = [
 const eventsLinks = [{ label: "Activites", path: "/activities" }];
 
 const hamLinks = [
+  { label: "Gallery", path: "/gallery" },
+  { label: "Press", path: "/press" },
   { label: "Accessibility", path: "/accessibility" },
   { label: "Contact Us", path: "/contact" },
   { label: "Careers", path: "/careers" },
@@ -47,7 +49,7 @@ export default function MainNav() {
 
   // Any detail page like /events/:slug or /rentals/:slug
   const detailPrefixes = [
-    "/events/",
+    "/explore/",
     "/rentals/",
     "/packages/",
     "/rooms/",
@@ -55,7 +57,7 @@ export default function MainNav() {
     "/experience/",
   ];
   const basePaths = [
-    "/events",
+    "/explore",
     "/rentals",
     "/packages",
     "/rooms",
@@ -73,12 +75,12 @@ export default function MainNav() {
       const btn = bookBtn.current;
       if (!nav) return;
 
-      // Kill previous ScrollTriggers for nav & button (if any)
+      // Kill previous ScrollTriggers
       ScrollTrigger.getById("navColor")?.kill();
       ScrollTrigger.getById("bookBtn")?.kill();
 
       if (isDetailPage) {
-        // DETAIL PAGES → static nav, no scroll animation
+        // DETAIL PAGES
         gsap.set(nav, { backgroundColor: "#003d51" });
 
         if (btn) {
@@ -88,16 +90,16 @@ export default function MainNav() {
           });
         }
 
-        return; // don't create any ScrollTriggers
+        return;
       }
 
-      // Match your initial CSS look
+      // Match initial CSS look
       gsap.set(nav, { backgroundColor: "transparent" });
 
       if (btn) {
         gsap.set(btn, {
           backgroundColor: "transparent",
-          color: "#ffffff", // or whatever your default text color is
+          color: "#ffffff",
         });
       }
 
@@ -159,12 +161,12 @@ export default function MainNav() {
             <Link to="/spa">Spa</Link>
           </li>
           <li className="listItem">
-            <DropdownNav main="Events" link="/events" items={eventsLinks} />
+            <DropdownNav main="Explore" link="/explore" items={eventsLinks} />
           </li>
           <li className="listItem">
             <HambrgerMenu items={hamLinks} />
           </li>
-          <li className="listItem">
+          <li className="listItem ip">
             <NavGhostBtn title="Reserve Now" link={BOOK_URL} ref={bookBtn} />
           </li>
         </ul>

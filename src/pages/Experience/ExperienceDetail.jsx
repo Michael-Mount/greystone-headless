@@ -67,7 +67,7 @@ export default function ExperienceDetail() {
                 Signature Experience
               </p>
 
-              <h1 className="bg-[#003e52] text-3xl md:text-5xl font-cursive text-slate-900">
+              <h1 className=" text-[#003e52] text-3xl md:text-5xl font-cursive ">
                 {title}
               </h1>
 

@@ -22,6 +22,14 @@
   }
 
   .listItem {
-    @apply flex items-center py-[10px] px-[20px];
+    @apply flex items-center py-[2px] px-[20px];
+  }
+
+  .listItem:hover {
+    @apply bg-[#003d51];
+  }
+
+  .ip:hover {
+    @apply bg-transparent;
   }
 }
