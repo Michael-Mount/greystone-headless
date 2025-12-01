@@ -1,7 +1,7 @@
 // src/components/GalleryPage.jsx
 import { useMemo, useState, useRef } from "react";
 import { PHOTOS } from "../../../Data/PhotoData";
-import FilterBar from "./FIlterBar";
+import FilterBar from "./FilterBar";
 import ImageModal from "./ImageModal";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
