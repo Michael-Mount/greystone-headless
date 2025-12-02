@@ -48,6 +48,7 @@ const Spa = lazy(() => import("./pages/Spa/Spa"));
 const Stay = lazy(() => import("./pages/Stay/Stay"));
 const Story = lazy(() => import("./pages/Story/Story"));
 const Weddings = lazy(() => import("./pages/Weddings/Weddings"));
+const WeddingRFP = lazy(() => import("./pages/Weddings/WeddingsRFP"));
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -99,6 +100,7 @@ function App() {
           <Route path="/stay" element={<Stay />} />
           <Route path="/story" element={<Story />} />
           <Route path="/weddings" element={<Weddings />} />
+          <Route path="/wedding-rfp" element={<WeddingRFP />} />
         </Routes>
       </Suspense>
       <Footer />

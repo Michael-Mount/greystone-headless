@@ -11,6 +11,7 @@ import SplitGallery from "../../components/Decorative/SplitGallery/SplitGallery"
 import TestimonialCarousel from "../../components/Decorative/TestimonialCarousel/TestimonialCarousel";
 import SplitFeature2 from "../../components/Decorative/SplitFeature2/SplitFeature2";
 
+import headVideo from "../../Video/HeroVideo.mp4";
 import Lobby1 from "../../images/lobby1.png";
 import Lake1 from "../../images/lake1.png";
 import Lake2 from "../../images/lake2.png";
@@ -78,7 +79,7 @@ export default function Home() {
 
   return (
     <div>
-      <HeroVIdeo />
+      <HeroVIdeo video={headVideo} />
       <div className="drawHeader" ref={drawContainer}>
         <div className="svgContainer">
           <p>redefining</p>

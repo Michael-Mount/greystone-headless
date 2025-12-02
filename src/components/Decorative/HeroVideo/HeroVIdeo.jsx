@@ -1,8 +1,7 @@
 import { useEffect, useRef } from "react";
 import "./Index.css";
-import video from "../../../Video/HeroVideo.mp4";
 
-export default function HeroVideo() {
+export default function HeroVideo({ video }) {
   const videoRef = useRef(null);
 
   useEffect(() => {

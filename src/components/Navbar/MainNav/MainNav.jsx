@@ -28,7 +28,13 @@ const stayLinks = [
   { label: "Amenities", path: "/amenities" },
 ];
 
-const eventsLinks = [{ label: "Activites", path: "/activities" }];
+const actLinks = [{ label: "Activites", path: "/activities" }];
+
+const eventsLinks = [
+  { label: "Weddings", path: "/weddings" },
+  { label: "Social", path: "/social" },
+  { label: "Corporate", path: "/corporate" },
+];
 
 const hamLinks = [
   { label: "Gallery", path: "/gallery" },
@@ -162,7 +168,10 @@ export default function MainNav() {
             <Link to="/spa">Spa</Link>
           </li>
           <li className="listItem">
-            <DropdownNav main="Explore" link="/explore" items={eventsLinks} />
+            <DropdownNav main="Events" link="/" items={eventsLinks} />
+          </li>
+          <li className="listItem">
+            <DropdownNav main="Explore" link="/explore" items={actLinks} />
           </li>
           <li className="listItem">
             <HambrgerMenu items={hamLinks} />
