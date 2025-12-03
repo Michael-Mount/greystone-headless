@@ -404,9 +404,8 @@ export default function Weddings() {
 
                 {/* Optional per-package link */}
                 <div className="mt-6 flex items-center justify-between gap-3">
-                  {/* TODO: Update this link to a detailed PDF, page, or inquiry with pre-filled package */}
                   <Link
-                    to="/contact"
+                    to="/wedding-rfp"
                     className="text-xs font-medium tracking-[0.18em] uppercase text-[#003d51] underline-offset-4 hover:underline"
                   >
                     Request Details for {pkg.name}

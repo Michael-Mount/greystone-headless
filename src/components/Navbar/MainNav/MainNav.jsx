@@ -32,8 +32,7 @@ const actLinks = [{ label: "Activites", path: "/activities" }];
 
 const eventsLinks = [
   { label: "Weddings", path: "/weddings" },
-  { label: "Social", path: "/social" },
-  { label: "Corporate", path: "/corporate" },
+  { label: "Meetings & Events", path: "/social-corporate-events" },
 ];
 
 const hamLinks = [
