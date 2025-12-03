@@ -36,6 +36,7 @@ const eventsLinks = [
 ];
 
 const hamLinks = [
+  { label: "Our Story", path: "/story" },
   { label: "Gallery", path: "/gallery" },
   { label: "Press", path: "/press" },
   { label: "Accessibility", path: "/accessibility" },
