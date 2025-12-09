@@ -38,6 +38,10 @@ const eventsLinks = [
 const hamLinks = [
   { label: "Our Story", path: "/story" },
   { label: "Gallery", path: "/gallery" },
+  {
+    label: "Gift Cards",
+    path: "https://greystoneinn.cardfoundry.com/giftcards",
+  },
   { label: "Press", path: "/press" },
   { label: "Accessibility", path: "/accessibility" },
   { label: "Contact Us", path: "/contact" },
