@@ -14,11 +14,11 @@
 }
 
 .CenteredTextBlock-Wrapper p {
-  font-size: 27px;
+  font-size: 25px;
   text-align: center;
-  color: #3e3e3c;
+  color: #60605f;
   font-family: "Times New Roman", Times, serif;
-  font-weight: lighter;
+  font-weight: 100;
 }
 
 @media (max-width: 768px) {
