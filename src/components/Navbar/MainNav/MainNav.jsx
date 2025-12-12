@@ -48,8 +48,7 @@ const hamLinks = [
   { label: "Careers", path: "/careers" },
 ];
 
-const BOOK_URL =
-  "https://s006006.officialbookings.com/?activeBookingEngine=KBE&propertyCode=S006006&skd-checkin=2025-11-02&skd-checkout=2025-11-03&skd-property-code=S006006";
+const BOOK_URL = "/book-now/calendar";
 
 export default function MainNav() {
   const navContainer = useRef(null);
@@ -58,7 +57,6 @@ export default function MainNav() {
 
   const path = location.pathname;
 
-  // Any detail page like /events/:slug or /rentals/:slug
   const detailPrefixes = [
     "/explore/",
     "/rentals/",
@@ -66,6 +64,7 @@ export default function MainNav() {
     "/rooms/",
     "/Experience/",
     "/experience/",
+    "/book-now/",
   ];
   const basePaths = [
     "/explore",
@@ -74,6 +73,7 @@ export default function MainNav() {
     "/rooms",
     "/Experience",
     "/experience",
+    "/book-now",
   ];
 
   const isDetailPage =

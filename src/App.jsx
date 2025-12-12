@@ -18,6 +18,7 @@ const Accessibility = lazy(() => import("./pages/Accessibility/Accessibility"));
 const Activities = lazy(() => import("./pages/Activities/Activites"));
 const Amenities = lazy(() => import("./pages/Amenities/Amenities"));
 const Blog = lazy(() => import("./pages/Blog/Blog"));
+const BookCalendar = lazy(() => import("./pages/BookCalendar/BookCalendar"));
 const Careers = lazy(() => import("./pages/Careers/Careers"));
 const Contact = lazy(() => import("./pages/Contact/Contact"));
 const Cottage = lazy(() => import("./pages/Cottage/Cottage"));
@@ -75,6 +76,7 @@ function App() {
           <Route path="/activities" element={<Activities />} />
           <Route path="/amenities" element={<Amenities />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/book-now/calendar" element={<BookCalendar />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/cottage" element={<Cottage />} />
