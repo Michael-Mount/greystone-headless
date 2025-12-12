@@ -21,6 +21,9 @@ const Blog = lazy(() => import("./pages/Blog/Blog"));
 const BookCalendar = lazy(() => import("./pages/BookCalendar/BookCalendar"));
 const Careers = lazy(() => import("./pages/Careers/Careers"));
 const Contact = lazy(() => import("./pages/Contact/Contact"));
+const CorporateTravel = lazy(() =>
+  import("./pages/CorporateTravel/CorporateTravel")
+);
 const Cottage = lazy(() => import("./pages/Cottage/Cottage"));
 const Dine = lazy(() => import("./pages/Dine/Dine"));
 const Enhancements = lazy(() => import("./pages/Enhancements/Enhancements"));
@@ -79,6 +82,7 @@ function App() {
           <Route path="/book-now/calendar" element={<BookCalendar />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/corporate-travel" element={<CorporateTravel />} />
           <Route path="/cottage" element={<Cottage />} />
           <Route path="/dine" element={<Dine />} />
           <Route path="/enhancements" element={<Enhancements />} />

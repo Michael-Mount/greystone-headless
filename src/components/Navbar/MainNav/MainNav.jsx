@@ -26,6 +26,7 @@ const stayLinks = [
   { label: "Packages & Offers", path: "/packages" },
   { label: "Experiences & Activities", path: "/experience" },
   { label: "Amenities", path: "/amenities" },
+  { label: "Corporate Travel", path: "/corporate-travel" },
 ];
 
 const actLinks = [{ label: "Activites", path: "/activities" }];
