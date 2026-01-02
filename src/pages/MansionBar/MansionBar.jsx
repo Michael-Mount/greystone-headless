@@ -2,6 +2,7 @@ import HeroImg from "../../components/Decorative/HeroImage/HeroImage";
 import CenteredText from "../../components/TextBlocks/CenterdTextBlock/CenterdTextBlock";
 import HourSplit from "../../components/TextBlocks/HourSplit/HourSplit";
 import PhotoGridGallery from "../../components/Decorative/PhotoGridGallery/PhotoGridGallery";
+import SplitFeature2 from "../../components/Decorative/SplitFeature2/SplitFeature2";
 
 const gallery = [
   {
@@ -44,6 +45,12 @@ const gallery = [
 const heroImg =
   "https://greystoneinn.com/wp-content/uploads/2020/11/Greystone-Dine-Parent-Mansion-Bar.jpg";
 
+const resturauntSplit = {
+  img: "https://greystoneinn.com/wp-content/uploads/2025/12/Greystone_Meetings_BarFood_Drinks_Nest_April24-8763-scaled.jpg",
+  title: "The Resturaunt",
+  para: "Looking for a sit down meal with a beatuful view of the lake, try our in house dining experience. ",
+  links: [{ label: "Learn More", href: "/dine/the-restaurant" }],
+};
 export default function MansionBar() {
   return (
     <div>
@@ -63,7 +70,7 @@ export default function MansionBar() {
         w-full text-center
         text-white text-base md:text-xl
         uppercase border-2
-        px-4 py-2 md:px-12 md:py-5
+        px-4 py-2 md:px-10 md:py-4.5
         hover:bg-white hover:text-[#003d51]
       "
           >
@@ -76,7 +83,7 @@ export default function MansionBar() {
         w-full text-center
         text-white text-base md:text-xl
         uppercase border-2
-        px-4 py-2 md:px-12 md:py-2
+        px-4 py-2 md:px-10 md:py-1
         hover:bg-white hover:text-[#003d51]
       "
           >
@@ -89,7 +96,7 @@ export default function MansionBar() {
         w-full text-center
         text-white text-base md:text-xl
         uppercase border-2
-        px-4 py-2 md:px-12 md:py-2
+        px-4 py-2 md:px-10 md:py-1
         hover:bg-white hover:text-[#003d51]
       "
           >
@@ -103,6 +110,7 @@ export default function MansionBar() {
         title="Stand in image"
       />
       <PhotoGridGallery images={gallery} />
+      <SplitFeature2 content={resturauntSplit} />
     </div>
   );
 }

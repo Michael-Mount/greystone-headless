@@ -23,13 +23,14 @@ const roomLinks = [
 ];
 
 const stayLinks = [
-  { label: "Packages & Offers", path: "/packages" },
-  { label: "Experiences & Activities", path: "/experience" },
   { label: "Amenities", path: "/amenities" },
   { label: "Corporate Travel", path: "/corporate-travel" },
 ];
 
-const actLinks = [{ label: "Activites", path: "/activities" }];
+const actLinks = [
+  { label: "Events", path: "/activities" },
+  { label: "Lake Experiences", path: "/experience" },
+];
 
 const eventsLinks = [
   { label: "Weddings", path: "/weddings" },
@@ -143,7 +144,6 @@ export default function MainNav() {
       }
     },
     {
-      // Re-run when we switch between detail and non-detail pages
       dependencies: [isDetailPage],
     }
   );
@@ -152,40 +152,43 @@ export default function MainNav() {
     <nav className="nav fixed top-0 left-0 right-0 z-50" ref={navContainer}>
       <div className="navContainer">
         {/* Logo */}
-        <div className="logoContainer">
+        <div className="logoContainer m-3.5">
           <Link to="/">
             <img src={Logo} alt="The Greyston white logo" className="logo" />
           </Link>
         </div>
-
-        {/* DESKTOP MENU */}
-        <ul className="mainMenu hidden md:flex">
-          <li className="listItem">
-            <DropdownNav main="Stay" link="/stay" items={stayLinks} />
-          </li>
-          <li className="listItem">
-            <DropdownNav main="Rooms" link="/rooms" items={roomLinks} />
-          </li>
-          <li className="listItem">
-            <Link to="/dine">Dine</Link>
-          </li>
-          <li className="listItem">
-            <Link to="/spa">Spa</Link>
-          </li>
-          <li className="listItem">
-            <DropdownNav main="Events" link="/" items={eventsLinks} />
-          </li>
-          <li className="listItem">
-            <DropdownNav main="Explore" link="/explore" items={actLinks} />
-          </li>
-          <li className="listItem">
-            <HambrgerMenu items={hamLinks} />
-          </li>
-          <li className="listItem ip">
-            <NavGhostBtn title="Reserve Now" link={BOOK_URL} ref={bookBtn} />
-          </li>
-        </ul>
-
+        <div>
+          {/* DESKTOP MENU */}
+          <ul className="mainMenu hidden md:flex">
+            <li className="listItem">
+              <DropdownNav main="Stay" link="/stay" items={stayLinks} />
+            </li>
+            <li className="listItem">
+              <Link to="/packages">Offers</Link>
+            </li>
+            <li className="listItem">
+              <DropdownNav main="Rooms" link="/rooms" items={roomLinks} />
+            </li>
+            <li className="listItem">
+              <Link to="/dine">Dine</Link>
+            </li>
+            <li className="listItem">
+              <Link to="/spa">Spa</Link>
+            </li>
+            <li className="listItem">
+              <DropdownNav main="Events" link="/" items={eventsLinks} />
+            </li>
+            <li className="listItem">
+              <DropdownNav main="Explore" link="/explore" items={actLinks} />
+            </li>
+            <li className="listItem">
+              <HambrgerMenu items={hamLinks} />
+            </li>
+            <li className="listItem ip">
+              <NavGhostBtn title="Reserve Now" link={BOOK_URL} ref={bookBtn} />
+            </li>
+          </ul>
+        </div>
         {/* MOBILE NAV (hamburger + drawer + overlay) */}
         <div className="md:hidden">
           <MobileNavDrawer

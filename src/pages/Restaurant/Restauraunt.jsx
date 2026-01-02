@@ -56,6 +56,13 @@ const cateringSplit = {
   links: [{ label: "Learn More", href: "#" }],
 };
 
+const barSplit = {
+  img: "https://greystoneinn.com/wp-content/uploads/2025/12/Greystone_Meetings_BarFood_Drinks_Nest_April24-8763-scaled.jpg",
+  title: "Mansion Bar",
+  para: "Looking for more of a light snack or a refreshing drink, try our in house bar at the Mansion.",
+  links: [{ label: "Learn More", href: "/dine/mansion-bar" }],
+};
+
 export default function Restauraunt() {
   return (
     <div>
@@ -75,7 +82,7 @@ export default function Restauraunt() {
         w-full text-center
         text-white text-base md:text-xl
         uppercase border-2
-        px-4 py-2 md:px-12 md:py-2
+        px-4 py-1 md:px-10 md:py-1
         hover:bg-white hover:text-[#003d51]
       "
           >
@@ -88,7 +95,7 @@ export default function Restauraunt() {
         w-full text-center
         text-white text-base md:text-xl
         uppercase border-2
-        px-4 py-2 md:px-12 md:py-2
+        px-4 py-1 md:px-10 md:py-1
         hover:bg-white hover:text-[#003d51]
       "
           >
@@ -101,7 +108,7 @@ export default function Restauraunt() {
         w-full text-center
         text-white text-base md:text-xl
         uppercase border-2
-        px-4 py-2 md:px-12 md:py-2
+        px-4 py-1 md:px-10 md:py-1
         hover:bg-white hover:text-[#003d51]
       "
           >
@@ -141,6 +148,7 @@ export default function Restauraunt() {
 
       <PhotoGridGallery images={gallery} />
       <SplitFeature2 content={cateringSplit} />
+      <SplitFeature2 content={barSplit} />
     </div>
   );
 }

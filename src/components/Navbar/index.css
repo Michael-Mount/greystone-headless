@@ -6,7 +6,7 @@
   }
 
   .navContainer {
-    @apply flex justify-between items-center max-w-[1400px] gap-[20px] m-auto py-0 px-[16px] md:px-[40px] text-white stroke-white fill-white;
+    @apply flex justify-between items-center flex-col max-w-[1400px] gap-[20px] m-auto py-0 px-[16px] md:px-[40px] text-white stroke-white fill-white;
   }
 
   .logoContainer {

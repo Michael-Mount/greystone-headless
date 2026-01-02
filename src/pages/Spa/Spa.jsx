@@ -40,9 +40,9 @@ const gallery = [
 
 const spaSplit = {
   img: "https://greystoneinn.com/wp-content/uploads/2020/12/Spa-Thumbs-01.jpg",
-  title: "Book Your Spa Appointment",
+  title: "Call to Book Your Spa Appointment",
   para: "Stretch out and feel your tensions ease as expert therapists provide soothing massages and revitalizing facials. Ideal for pre-wedding pampering, romantic weekends, group visits and more. ",
-  links: [{ label: "Book Now", href: "#" }],
+  links: [],
 };
 
 export default function Spa() {
