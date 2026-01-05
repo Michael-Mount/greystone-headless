@@ -23,8 +23,12 @@ const roomLinks = [
 ];
 
 const stayLinks = [
+  { label: "Rooms", path: "/rooms" },
+  { label: "Cottage", path: "/cottage" },
+  { label: "Hillmont", path: "/hillmont" },
+  { label: "Mansion", path: "/mansion" },
+  { label: "Rentals", path: "/rentals" },
   { label: "Amenities", path: "/amenities" },
-  { label: "Corporate Travel", path: "/corporate-travel" },
 ];
 
 const actLinks = [
@@ -45,6 +49,8 @@ const hamLinks = [
   { label: "Contact Us", path: "/contact" },
   { label: "Careers", path: "/careers" },
 ];
+
+const offerLinks = [{ label: "Corporate Travel", path: "/corporate-travel" }];
 
 const BOOK_URL = "/book-now/calendar";
 
@@ -163,11 +169,9 @@ export default function MainNav() {
               <DropdownNav main="Stay" link="/stay" items={stayLinks} />
             </li>
             <li className="listItem">
-              <Link to="/packages">Offers</Link>
+              <DropdownNav main="Offers" link="/packages" items={offerLinks} />
             </li>
-            <li className="listItem">
-              <DropdownNav main="Rooms" link="/rooms" items={roomLinks} />
-            </li>
+
             <li className="listItem">
               <Link to="/dine">Dine</Link>
             </li>
