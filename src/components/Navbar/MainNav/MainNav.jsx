@@ -40,10 +40,6 @@ const eventsLinks = [
 const hamLinks = [
   { label: "Our Story", path: "/story" },
   { label: "Gallery", path: "/gallery" },
-  {
-    label: "Gift Cards",
-    path: "https://greystoneinn.cardfoundry.com/giftcards",
-  },
   { label: "Press", path: "/press" },
   { label: "Accessibility", path: "/accessibility" },
   { label: "Contact Us", path: "/contact" },
@@ -153,10 +149,13 @@ export default function MainNav() {
       <div className="navContainer">
         {/* Logo */}
         <div className="logoContainer m-3.5">
+          <p>828.966.4700</p>
           <Link to="/">
             <img src={Logo} alt="The Greyston white logo" className="logo" />
           </Link>
+          <p>Info@greystoneinn.com</p>
         </div>
+
         <div>
           {/* DESKTOP MENU */}
           <ul className="mainMenu hidden md:flex">
@@ -182,8 +181,14 @@ export default function MainNav() {
               <DropdownNav main="Explore" link="/explore" items={actLinks} />
             </li>
             <li className="listItem">
+              <Link to="https://greystoneinn.cardfoundry.com/giftcards">
+                Gift Card
+              </Link>
+            </li>
+            <li className="listItem">
               <HambrgerMenu items={hamLinks} />
             </li>
+
             <li className="listItem ip">
               <NavGhostBtn title="Reserve Now" link={BOOK_URL} ref={bookBtn} />
             </li>

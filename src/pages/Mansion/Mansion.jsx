@@ -74,8 +74,8 @@ export default function Mansion() {
           "Board games and Stave puzzles for use while our guest",
           "Miss Lucy lake cruise May 1st through Thanksgiving (weather permitting)",
         ]}
-        bookbtn="call to Book Your Lakeside Stay"
-        link="#"
+        bookbtn="Book Your Lakeside Stay"
+        link="/book-now/calendar"
       />
       <PhotoGridGallery images={gallery} />
     </div>

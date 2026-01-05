@@ -2,7 +2,7 @@
 
 @layer components {
   .nav {
-    @apply bg-transparent w-full fixed top-0 z-50 text-[15px] p-[15px] uppercase;
+    @apply bg-transparent w-full fixed top-0 z-50 text-[12px] p-[15px] uppercase;
   }
 
   .navContainer {
@@ -10,11 +10,11 @@
   }
 
   .logoContainer {
-    @apply flex items-center;
+    @apply flex items-center justify-between w-[75%];
   }
 
   .logo {
-    @apply w-[200px] text-white stroke-white fill-white;
+    @apply w-[150px] h-auto text-white stroke-white fill-white;
   }
 
   .mainMenu {

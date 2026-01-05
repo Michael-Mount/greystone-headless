@@ -68,9 +68,9 @@ export default function MansionBar() {
             className="
         btn-item
         w-full text-center
-        text-white text-base md:text-xl
+        text-white text-base md:text-md
         uppercase border-2
-        px-4 py-2 md:px-10 md:py-4.5
+        px-4 py-2 md:px-6 md:py-5.5
         hover:bg-white hover:text-[#003d51]
       "
           >
@@ -81,9 +81,9 @@ export default function MansionBar() {
             className="
         btn-item
         w-full text-center
-        text-white text-base md:text-xl
+        text-white text-base md:text-md
         uppercase border-2
-        px-4 py-2 md:px-10 md:py-1
+        px-4 py-2 md:px-6 md:py-2.5
         hover:bg-white hover:text-[#003d51]
       "
           >
@@ -92,11 +92,11 @@ export default function MansionBar() {
 
           <li
             className="
-        btn-item
+       btn-item
         w-full text-center
-        text-white text-base md:text-xl
+        text-white text-base md:text-md
         uppercase border-2
-        px-4 py-2 md:px-10 md:py-1
+        px-4 py-2 md:px-6 md:py-2.5
         hover:bg-white hover:text-[#003d51]
       "
           >

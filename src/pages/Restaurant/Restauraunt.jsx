@@ -53,7 +53,7 @@ const cateringSplit = {
   img: "https://greystoneinn.com/wp-content/uploads/2020/11/Greystone-Dine-Parent-Catering.jpg",
   title: "Catering",
   para: "Our award-winning chef will design a menu to impress the most well-traveled palates, whether presented buffet-style or served individually. Choose from our array of menus designed to enhance any time of day, or let us custom design an unforgettable feast to highlight your event’s theme.",
-  links: [{ label: "Learn More", href: "#" }],
+  links: [{ label: "Call to Learn More", href: "#" }],
 };
 
 const barSplit = {
@@ -80,7 +80,7 @@ export default function Restauraunt() {
             className="
         btn-item
         w-full text-center
-        text-white text-base md:text-xl
+        text-white text-base md:text-md
         uppercase border-2
         px-4 py-1 md:px-10 md:py-1
         hover:bg-white hover:text-[#003d51]
@@ -93,7 +93,7 @@ export default function Restauraunt() {
             className="
         btn-item
         w-full text-center
-        text-white text-base md:text-xl
+        text-white text-base md:text-md
         uppercase border-2
         px-4 py-1 md:px-10 md:py-1
         hover:bg-white hover:text-[#003d51]
@@ -106,7 +106,7 @@ export default function Restauraunt() {
             className="
         btn-item
         w-full text-center
-        text-white text-base md:text-xl
+        text-white text-base md:text-md
         uppercase border-2
         px-4 py-1 md:px-10 md:py-1
         hover:bg-white hover:text-[#003d51]

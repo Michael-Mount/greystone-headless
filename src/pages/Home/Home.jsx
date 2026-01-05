@@ -80,14 +80,27 @@ export default function Home() {
   return (
     <div>
       <HeroVIdeo video={headVideo} />
-      <div className="drawHeader" ref={drawContainer}>
-        <div className="svgContainer">
-          <p>redefining</p>
+      <div
+        className="w-screen max-w-none flex flex-col md:flex-row h-[80vh] overflow-hidden p-4"
+        ref={drawContainer}
+      >
+        <div className="flex flex-col flex-1 items-center justify-center gap-20 px-6 h-[75%]">
+          <p className="text-5xl uppercase font-serif self-start;">
+            redefining
+          </p>
           <LuxuryDraw size={isMobile ? 320 : 520} />
         </div>
-        <div className="headerImgContainer">
-          <img src={Lobby1} alt="a rustic leather chair" />
-          <img src={Lake1} alt="a man on a boat" />
+        <div className="flex flex-1 items-center justify-end gap-4 px-6 h-full;">
+          <img
+            className="h-full w-1/2 object-cover"
+            src={Lobby1}
+            alt="a rustic leather chair"
+          />
+          <img
+            className="h-full w-1/2 object-cover"
+            src={Lake1}
+            alt="a man on a boat"
+          />
         </div>
       </div>
       <SplitFeature1

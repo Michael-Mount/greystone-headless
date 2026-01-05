@@ -106,10 +106,10 @@ export default function RentalDetail() {
 
               <div className="flex flex-wrap gap-3 mt-6">
                 <a
-                  href="https://s006006.officialbookings.com/?activeBookingEngine=KBE&propertyCode=S006006&checkin=2025-11-02&checkout=2025-11-03&skd-checkin=2025-11-17&skd-checkout=2025-11-18&skd-property-code=S006006"
+                  href="#"
                   className="inline-flex items-center justify-center rounded-full bg-slate-900 px-6 py-2.5 text-xs font-semibold uppercase tracking-[0.2em] text-white hover:bg-slate-700 transition"
                 >
-                  Check Availability
+                  Call to Check Availability
                 </a>
               </div>
             </div>
