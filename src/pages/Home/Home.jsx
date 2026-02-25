@@ -15,8 +15,8 @@ import headVideo from "../../Video/HeroVideo.mp4";
 import Lobby1 from "../../images/lobby1.png";
 import Lake1 from "../../images/lake1.png";
 import Lake2 from "../../images/lake2.png";
-import Coffee1 from "../../images/coffee1.png";
-import Wedding1 from "../../images/wedding.jpg";
+import Coffee1 from "../../images/resturantTables.webp";
+import Wedding1 from "../../images/evening.webp";
 
 import AutumnLake from "../../Video/LakeAutumn.mp4";
 
@@ -66,15 +66,15 @@ export default function Home() {
       tl.fromTo(
         q(".svgContainer p"),
         { y: 24, opacity: 0 },
-        { y: 0, opacity: 1, duration: 2.5 }
+        { y: 0, opacity: 1, duration: 2.5 },
       ).fromTo(
         q(".headerImgContainer img"),
         { y: 30, opacity: 0 },
         { y: 0, opacity: 1, duration: 2.5, stagger: 1.5 },
-        "-=0.25"
+        "-=0.25",
       );
     },
-    { scope: drawContainer }
+    { scope: drawContainer },
   );
 
   return (
@@ -111,6 +111,7 @@ export default function Home() {
         link="/experience"
       />
       <SplitGallery gallery={mainGallery} />
+
       <TestimonialCarousel />
       <SplitFeature2 content={roomSplit} />
       <SplitFeature2 />

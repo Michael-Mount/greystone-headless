@@ -55,8 +55,7 @@ export const rentals = [
       "Dedicated parking space next to the cottage",
     ],
     amenities: ["Lake View", "Feather-top mattress", "Marina view"],
-    mainimage:
-      "https://greystoneinn.com/wp-content/uploads/2021/01/LaurelLodge-swing.jpg",
+    mainimage: "src/images/evening.webp",
     images: [
       "https://greystoneinn.com/wp-content/uploads/2020/07/LaurelLodge-living1.jpg",
       "https://greystoneinn.com/wp-content/uploads/2020/07/IMG_9947-scaled.jpg",

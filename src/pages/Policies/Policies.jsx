@@ -1,7 +1,6 @@
 import HeroImage from "../../components/Decorative/HeroImage/HeroImage";
 
-const hrimg =
-  "https://greystoneinn.com/wp-content/uploads/2020/09/MG_0056-1.jpg";
+const hrimg = "src/images/GalleryHero.jpeg";
 
 export default function Policies() {
   return (

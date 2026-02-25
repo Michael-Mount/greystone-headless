@@ -4,8 +4,7 @@ import { useGSAP } from "@gsap/react";
 
 import HeroImage from "../../components/Decorative/HeroImage/HeroImage";
 
-const hrimg =
-  "https://greystoneinn.com/wp-content/uploads/2020/11/Greystone-Story-Parent-Header.jpg";
+const hrimg = "src/images/lake2.png";
 
 const faqs = [
   {
@@ -48,7 +47,7 @@ export default function Contact() {
         },
       });
     },
-    { scope: containerRef }
+    { scope: containerRef },
   );
 
   const toggleIndex = (index) => {

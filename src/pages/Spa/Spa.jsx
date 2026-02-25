@@ -3,9 +3,7 @@ import CenterdTextBlock from "../../components/TextBlocks/CenterdTextBlock/Cente
 import PhotoGridGallery from "../../components/Decorative/PhotoGridGallery/PhotoGridGallery";
 import SplitFeature2 from "../../components/Decorative/SplitFeature2/SplitFeature2";
 
-const heroimg =
-  "https://greystoneinn.com/wp-content/uploads/2020/12/Greystone_Aug19-5933.jpg";
-
+const heroimg = "src/images/SpaHeader.webp";
 const introText =
   "Overnight guests and day visitors journey down a quaint path to enter our spa. Upon entry we provide complimentary citrus water and local hot teas, and you are welcome to relax as you await your therapy. Due to the intimate nature of our Spa, we highly recommend reserving your treatments in advance.";
 

@@ -62,10 +62,7 @@ const gallery = [
 export default function Cottage() {
   return (
     <div>
-      <HeroImage
-        image="https://greystoneinn.com/wp-content/uploads/2020/11/Graystone_Christmas_21-1778-HDR.jpg"
-        title="Lakeside Cottage"
-      />
+      <HeroImage image="src/images/cottageHero.jpeg" title="Lakeside Cottage" />
       <CenteredTextBlock content={introText} />
       <SplitColList
         room="Within our Lakeside Cottage, nestled above the serene spa and overlooking the marina cove and mountains, are two private one bedroom suites. The side by side suites have adjoining doors for friends traveling together. Each suite has a bedroom with a luxurious king bed, separate living room and a screened in porch."

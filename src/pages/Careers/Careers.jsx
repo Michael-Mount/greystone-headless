@@ -2,8 +2,7 @@ import HeroImage from "../../components/Decorative/HeroImage/HeroImage";
 import BasicBtn from "../../components/Buttons/BasicBtn/BasicBtn";
 import JobAdBlock from "../../components/Decorative/JobAdBlock/JobAdBlock";
 
-const hrimg =
-  "https://greystoneinn.com/wp-content/uploads/2021/01/Experience-Enhancements-Header.jpg";
+const hrimg = "src/images/eventHero.jpeg";
 
 import { jobs } from "../../Data/JobData";
 

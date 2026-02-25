@@ -1,7 +1,6 @@
 import HeroImage from "../../components/Decorative/HeroImage/HeroImage";
 
-const hrimg =
-  "https://greystoneinn.com/wp-content/uploads/2021/01/Greystone_ActivitiesHEADER-1.jpg";
+const hrimg = "src/images/AccessibilityHero.jpeg";
 
 export default function Accessibility() {
   return (

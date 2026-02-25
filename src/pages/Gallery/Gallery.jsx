@@ -1,8 +1,7 @@
 import HeroImage from "../../components/Decorative/HeroImage/HeroImage";
 import GalleryPage from "../../components/Decorative/Gallery/GalleryPage";
 
-const hrimg =
-  "https://greystoneinn.com/wp-content/uploads/2021/01/GreystoneInn_Rooms-0368.jpg";
+const hrimg = "src/images/GalleryHero.jpeg";
 
 export default function Gallery() {
   return (

@@ -2,8 +2,7 @@ import { useLayoutEffect, useRef } from "react";
 import { gsap } from "gsap";
 
 import HeroImage from "../../components/Decorative/HeroImage/HeroImage";
-const hrimg =
-  "https://greystoneinn.com/wp-content/uploads/2021/01/GreystoneInn_Rooms-0368.jpg";
+const hrimg = "src/images/ActivitesHero.jpeg";
 
 import { events } from "../../Data/EventsData";
 import EventCalendar from "../../components/Decorative/EventCard/EventCalendar";

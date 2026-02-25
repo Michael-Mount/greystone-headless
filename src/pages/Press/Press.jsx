@@ -1,8 +1,7 @@
 import HeroImage from "../../components/Decorative/HeroImage/HeroImage";
 import PressGrid from "../../components/Decorative/PressCard/PressGrid";
 
-const hrimg =
-  "https://greystoneinn.com/wp-content/uploads/2020/11/Greystone-Story-Parent-Header.jpg";
+const hrimg = "src/images/PressHero.jpeg";
 
 export default function Press() {
   return (

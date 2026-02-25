@@ -43,7 +43,7 @@ const gallery = [
 ];
 
 const heroImg =
-  "https://greystoneinn.com/wp-content/uploads/2020/11/Greystone-Dine-Parent-Mansion-Bar.jpg";
+  "https://greystoneinn.com/wp-content/uploads/2025/12/Greystone_Meetings_BarFood_Drinks_Nest_April24-8763-scaled.jpg";
 
 const resturauntSplit = {
   img: "https://greystoneinn.com/wp-content/uploads/2025/12/Greystone_Meetings_BarFood_Drinks_Nest_April24-8763-scaled.jpg",

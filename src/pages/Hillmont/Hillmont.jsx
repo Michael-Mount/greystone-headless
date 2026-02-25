@@ -3,8 +3,7 @@ import CenteredTextBlock from "../../components/TextBlocks/CenterdTextBlock/Cent
 import SplitColList from "../../components/TextBlocks/SplitColList/SplitColList";
 import PhotoGridGallery from "../../components/Decorative/PhotoGridGallery/PhotoGridGallery";
 
-const heroimg =
-  "https://greystoneinn.com/wp-content/uploads/2020/12/HillmontClassic-3_HEADER.jpg";
+const heroimg = "src/images/HillmontHero.png";
 const introText =
   "Tucked just above the spa and looking out over the quiet marina and distant Blue Ridge peaks, The Hillmont is the gracious main lodge for Cottage on Lake Toxa. Here, intimate one-bedroom suites welcome couples and friends with cozy living rooms, breezy screened porches, plush king beds, soft feather bedding, and thoughtful touches that wrap you in Hillmont’s signature lakeside calm.";
 

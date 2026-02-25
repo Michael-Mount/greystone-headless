@@ -5,8 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import HeroImage from "../../components/Decorative/HeroImage/HeroImage";
 
-const heroimg =
-  "https://greystoneinn.com/wp-content/uploads/2020/09/Greystone_Summer20-3166.jpg";
+const heroimg = "src/images/eventHero.jpeg";
 
 gsap.registerPlugin(ScrollTrigger);
 
