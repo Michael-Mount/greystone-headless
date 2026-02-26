@@ -1,6 +1,5 @@
 import HeroImage from "../../components/Decorative/HeroImage/HeroImage";
-
-const hrimg = "src/images/AccessibilityHero.jpeg";
+import hrimg from "../../images/AccessibilityHero.jpeg";
 
 export default function Accessibility() {
   return (

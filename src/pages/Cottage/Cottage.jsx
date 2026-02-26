@@ -2,6 +2,7 @@ import HeroImage from "../../components/Decorative/HeroImage/HeroImage";
 import CenteredTextBlock from "../../components/TextBlocks/CenterdTextBlock/CenterdTextBlock";
 import PhotoGridGallery from "../../components/Decorative/PhotoGridGallery/PhotoGridGallery";
 import SplitColList from "../../components/TextBlocks/SplitColList/SplitColList";
+import hrimg from "../../images/cottageHero.jpeg";
 
 const introText =
   "Tucked above the spa and gazing out toward the quiet marina and distant mountains, our Lakeside Cottage invites you into a pair of intimate one-bedroom suites—perfect for couples or friends traveling together. Each suite opens to a cozy living room and a breezy screened porch, with a plush king bed, soft feather bedding, and thoughtful comforts waiting to wrap you in lakeside calm.";
@@ -62,7 +63,7 @@ const gallery = [
 export default function Cottage() {
   return (
     <div>
-      <HeroImage image="src/images/cottageHero.jpeg" title="Lakeside Cottage" />
+      <HeroImage image={hrimg} title="Lakeside Cottage" />
       <CenteredTextBlock content={introText} />
       <SplitColList
         room="Within our Lakeside Cottage, nestled above the serene spa and overlooking the marina cove and mountains, are two private one bedroom suites. The side by side suites have adjoining doors for friends traveling together. Each suite has a bedroom with a luxurious king bed, separate living room and a screened in porch."

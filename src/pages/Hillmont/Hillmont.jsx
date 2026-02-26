@@ -2,8 +2,8 @@ import HeroImage from "../../components/Decorative/HeroImage/HeroImage";
 import CenteredTextBlock from "../../components/TextBlocks/CenterdTextBlock/CenterdTextBlock";
 import SplitColList from "../../components/TextBlocks/SplitColList/SplitColList";
 import PhotoGridGallery from "../../components/Decorative/PhotoGridGallery/PhotoGridGallery";
+import heroimg from "../../images/HillmontHero.png";
 
-const heroimg = "src/images/HillmontHero.png";
 const introText =
   "Tucked just above the spa and looking out over the quiet marina and distant Blue Ridge peaks, The Hillmont is the gracious main lodge for Cottage on Lake Toxa. Here, intimate one-bedroom suites welcome couples and friends with cozy living rooms, breezy screened porches, plush king beds, soft feather bedding, and thoughtful touches that wrap you in Hillmont’s signature lakeside calm.";
 

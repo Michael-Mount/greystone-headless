@@ -2,8 +2,8 @@ import HeroImage from "../../components/Decorative/HeroImage/HeroImage";
 import CenterdTextBlock from "../../components/TextBlocks/CenterdTextBlock/CenterdTextBlock";
 import PhotoGridGallery from "../../components/Decorative/PhotoGridGallery/PhotoGridGallery";
 import SplitFeature2 from "../../components/Decorative/SplitFeature2/SplitFeature2";
+import heroimg from "../../images/SpaHeader.webp";
 
-const heroimg = "src/images/SpaHeader.webp";
 const introText =
   "Overnight guests and day visitors journey down a quaint path to enter our spa. Upon entry we provide complimentary citrus water and local hot teas, and you are welcome to relax as you await your therapy. Due to the intimate nature of our Spa, we highly recommend reserving your treatments in advance.";
 

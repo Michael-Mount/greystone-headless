@@ -2,8 +2,8 @@ import HeroImage from "../../components/Decorative/HeroImage/HeroImage";
 import CenteredTextBlock from "../../components/TextBlocks/CenterdTextBlock/CenterdTextBlock";
 import SplitColList from "../../components/TextBlocks/SplitColList/SplitColList";
 import PhotoGridGallery from "../../components/Decorative/PhotoGridGallery/PhotoGridGallery";
+import heroimg from "../../images/MansionHero.jpeg";
 
-const heroimg = "src/images/MansionHero.jpeg";
 const introText =
   "Tucked just beyond the main hotel, the Mansion feels like stepping into a story. Once a private estate home, it now serves as an intimate retreat where high ceilings, restored woodwork, and soft, ambient lighting set the stage for memorable moments. From quiet mornings with coffee on the veranda to evenings spent lingering over cocktails in the parlor, the Mansion offers a cozy, lived-in elegance you won’t find anywhere else on property.";
 

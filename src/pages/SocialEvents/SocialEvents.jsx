@@ -4,8 +4,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import HeroImage from "../../components/Decorative/HeroImage/HeroImage";
-
-const heroimg = "src/images/eventHero.jpeg";
+import heroimg from "../../images/eventHero.jpeg";
 
 gsap.registerPlugin(ScrollTrigger);
 

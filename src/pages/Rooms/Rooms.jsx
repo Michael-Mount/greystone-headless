@@ -7,9 +7,6 @@ import CenterdTextBlock from "../../components/TextBlocks/CenterdTextBlock/Cente
 import RoomCard from "../../components/Decorative/RoomCard.jsx/RoomCard";
 import { rooms } from "../../Data/RoomData";
 
-const heroImg =
-  "https://greystoneinn.com/wp-content/uploads/2020/12/GreystoneInn_Rooms-9150_HEADER.jpg";
-
 const introText =
   "From gracious mansion rooms in our historic inn to spacious private homes tucked around Lake Toxaway, every stay at The Greystone Inn is designed to feel like your own mountain retreat. Explore our collection of guest rooms, suites, and vacation rentals—each with its own character, thoughtful comforts, and a sense of place rooted in the lake and the Blue Ridge Mountains.";
 
@@ -36,7 +33,10 @@ export default function Rooms() {
   }, []);
   return (
     <div>
-      <HeroImg image={heroImg} title="Rooms" />
+      <HeroImg
+        image="https://greystoneinn.com/wp-content/uploads/2020/12/GreystoneInn_Rooms-9150_HEADER.jpg"
+        title="Rooms"
+      />
       <CenterdTextBlock content={introText} />
       <div
         ref={gridRef}

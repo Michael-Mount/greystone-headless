@@ -2,7 +2,7 @@ import { useLayoutEffect, useRef } from "react";
 import { gsap } from "gsap";
 
 import HeroImage from "../../components/Decorative/HeroImage/HeroImage";
-const hrimg = "src/images/ActivitesHero.jpeg";
+import hrimg from "../../images/AccessibilityHero.jpeg";
 
 import { events } from "../../Data/EventsData";
 import EventCalendar from "../../components/Decorative/EventCard/EventCalendar";

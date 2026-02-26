@@ -1,6 +1,5 @@
 import HeroImage from "../../components/Decorative/HeroImage/HeroImage";
-
-const hrimg = "src/images/GalleryHero.jpeg";
+import hrimg from "../../images/GalleryHero.jpeg";
 
 export default function Policies() {
   return (

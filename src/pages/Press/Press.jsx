@@ -1,7 +1,6 @@
 import HeroImage from "../../components/Decorative/HeroImage/HeroImage";
 import PressGrid from "../../components/Decorative/PressCard/PressGrid";
-
-const hrimg = "src/images/PressHero.jpeg";
+import hrimg from "../../images/PressHero.jpeg";
 
 export default function Press() {
   return (

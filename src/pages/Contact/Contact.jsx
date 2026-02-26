@@ -3,8 +3,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
 import HeroImage from "../../components/Decorative/HeroImage/HeroImage";
-
-const hrimg = "src/images/lake2.png";
+import hrimg from "../../images/lake2.png";
 
 const faqs = [
   {

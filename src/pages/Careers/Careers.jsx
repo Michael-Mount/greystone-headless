@@ -1,8 +1,7 @@
 import HeroImage from "../../components/Decorative/HeroImage/HeroImage";
 import BasicBtn from "../../components/Buttons/BasicBtn/BasicBtn";
 import JobAdBlock from "../../components/Decorative/JobAdBlock/JobAdBlock";
-
-const hrimg = "src/images/eventHero.jpeg";
+import hrimg from "../../images/eventHero.jpeg";
 
 import { jobs } from "../../Data/JobData";
 
