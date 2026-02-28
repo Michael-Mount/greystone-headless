@@ -16,7 +16,7 @@ import Lobby1 from "../../images/lobby1.png";
 import Lake1 from "../../images/lake1.png";
 import Lake2 from "../../images/lake2.png";
 import Coffee1 from "../../images/resturantTables.webp";
-import Wedding1 from "../../images/evening.webp";
+import Wedding1 from "../../images/AccessibilityHero.jpeg";
 
 import AutumnLake from "../../Video/LakeAutumn.mp4";
 
