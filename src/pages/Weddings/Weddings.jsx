@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import HeroVideo from "../../components/Decorative/HeroVideo/HeroVIdeo";
+import HeroVideo from "../../components/Decorative/HeroVIdeo/HeroVideo";
 import CenternedTextBlock from "../../components/TextBlocks/CenterdTextBlock/CenterdTextBlock";
 import PhotoGridGallery from "../../components/Decorative/PhotoGridGallery/PhotoGridGallery";
 

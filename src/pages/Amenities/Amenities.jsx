@@ -195,7 +195,7 @@ export default function Amenities() {
       {/* Hero */}
       <section className="amenities-hero relative overflow-hidden">
         <div className="absolute inset-0 amenities-hero-image">
-          {/* Stand-in hero image */}
+          
           <img
             src="https://greystoneinn.com/wp-content/uploads/2020/11/Greystone-Story-Parent-Header.jpg"
             alt="Lakeside view at dusk with mountains"
